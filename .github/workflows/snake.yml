@@ -1,8 +1,8 @@
-# ================================================================
+# ═══════════════════════════════════════════════════════════════
 #  SHOXZOD QALANDAROV — GitHub Profile Auto-Update
-#  Jobs: snake 🐍 · validate ✅ · stats 📊 · report 📋
-#  Runs: every 12h + on push to main + manual trigger
-# ================================================================
+#  Jobs: 🐍 snake  ·  📊 stats  ·  ✅ validate  ·  📋 report
+#  Schedule: every 12h  +  push to main  +  manual
+# ═══════════════════════════════════════════════════════════════
 
 name: Profile README Auto-Update
 
@@ -18,9 +18,9 @@ permissions:
 
 jobs:
 
-  # ─────────────────────────────────────────────────────────
-  # 1. CONTRIBUTION SNAKE
-  # ─────────────────────────────────────────────────────────
+  # ─────────────────────────────────────────────────────────────
+  # 1 · CONTRIBUTION SNAKE
+  # ─────────────────────────────────────────────────────────────
   snake:
     name: Generate Contribution Snake
     runs-on: ubuntu-latest
@@ -28,7 +28,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Generate snake SVG — dark + light
+      - name: Generate snake (dark + light)
         uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
@@ -44,57 +44,18 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-  # ─────────────────────────────────────────────────────────
-  # 2. VALIDATE FILES
-  # ─────────────────────────────────────────────────────────
-  validate:
-    name: Validate SVG and README
+  # ─────────────────────────────────────────────────────────────
+  # 2 · STATS REFRESH
+  # ─────────────────────────────────────────────────────────────
+  stats:
+    name: Refresh GitHub Stats
     runs-on: ubuntu-latest
     needs: snake
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Check required files
-        run: |
-          for f in README.md header.svg; do
-            [ -f "$f" ] && echo "✅  $f — $(wc -c < $f) bytes" \
-                        || { echo "❌  $f missing"; exit 1; }
-          done
-
-      - name: Validate SVG XML
-        run: |
-          python3 -c "
-          import xml.etree.ElementTree as ET
-          ET.parse('header.svg')
-          print('✅  header.svg is valid XML/SVG')
-          "
-
-      - name: Check badge services
-        run: |
-          for url in \
-            "https://komarev.com" \
-            "https://github-readme-stats.vercel.app" \
-            "https://github-readme-streak-stats.herokuapp.com" \
-            "https://github-profile-trophy.vercel.app" \
-            "https://capsule-render.vercel.app" \
-            "https://github-readme-activity-graph.vercel.app"; do
-            code=$(curl -s -o /dev/null -w "%{http_code}" --max-time 8 "$url")
-            echo "  [$code] $url"
-          done
-
-  # ─────────────────────────────────────────────────────────
-  # 3. STATS REFRESH
-  # ─────────────────────────────────────────────────────────
-  stats:
-    name: Refresh GitHub Stats
-    runs-on: ubuntu-latest
-    needs: validate
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Fetch stats from GitHub API
+      - name: Fetch stats via GitHub API
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: salom0227
@@ -120,14 +81,12 @@ jobs:
               "following":    data.get("following",    0),
               "updated_at":   data.get("updated_at",   ""),
           }
-
           with open("stats.json", "w") as f:
               json.dump(stats, f, indent=2)
-
           print(f"✅  repos={stats['public_repos']}  followers={stats['followers']}")
           PYEOF
 
-      - name: Commit if changed
+      - name: Commit stats.json if changed
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name  "github-actions[bot]"
@@ -136,26 +95,53 @@ jobs:
             || git commit -m "chore: auto-update stats.json [skip ci]"
           git push
 
-  # ─────────────────────────────────────────────────────────
-  # 4. SUMMARY REPORT
-  # ─────────────────────────────────────────────────────────
+  # ─────────────────────────────────────────────────────────────
+  # 3 · VALIDATE
+  # ─────────────────────────────────────────────────────────────
+  validate:
+    name: Validate Files
+    runs-on: ubuntu-latest
+    needs: stats
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Check files exist
+        run: |
+          for f in README.md header.svg; do
+            [ -f "$f" ] \
+              && echo "✅  $f — $(wc -c < $f) bytes" \
+              || { echo "❌  $f MISSING"; exit 1; }
+          done
+
+      - name: Validate header.svg XML
+        run: |
+          python3 -c "
+          import xml.etree.ElementTree as ET
+          ET.parse('header.svg')
+          print('✅  header.svg valid XML/SVG')
+          "
+
+  # ─────────────────────────────────────────────────────────────
+  # 4 · SUMMARY REPORT
+  # ─────────────────────────────────────────────────────────────
   report:
     name: Summary Report
     runs-on: ubuntu-latest
-    needs: [ snake, validate, stats ]
+    needs: [ snake, stats, validate ]
     if: always()
     steps:
-      - name: Write summary
+      - name: Write job summary
         run: |
           cat >> $GITHUB_STEP_SUMMARY << 'EOF'
           ## Shoxzod Profile — Pipeline Summary
 
-          | Job | Status |
+          | Job | Result |
           |-----|--------|
           | 🐍 Snake animation | ✅ pushed to `output` branch |
-          | 🔍 Validate files  | ✅ README.md + header.svg OK  |
-          | 📊 Stats refresh   | ✅ stats.json updated         |
+          | 📊 Stats refresh   | ✅ stats.json updated |
+          | ✅ Validate        | ✅ README.md + header.svg OK |
 
-          **Profile:** https://github.com/salom0227  
-          **Schedule:** every 12 hours automatically
+          **Profile:** https://github.com/salom0227
+          **Runs:** every 12 hours automatically
           EOF
