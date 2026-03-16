@@ -8,10 +8,10 @@
 
 <br/>
 
-<img src="https://img.shields.io/badge/STATUS-AVAILABLE_FOR_HIRE-00ff88?style=for-the-badge&logo=checkmarx&logoColor=white"/>
-<img src="https://img.shields.io/badge/LOCATION-TASHKENT%2C_UZ-00F7FF?style=for-the-badge&logo=googlemaps&logoColor=white"/>
-<img src="https://img.shields.io/badge/EXPERIENCE-2%2B_YEARS-bf5af2?style=for-the-badge&logo=clockify&logoColor=white"/>
-<img src="https://img.shields.io/badge/UPTIME-99.9%25-00ff88?style=for-the-badge&logo=statuspage&logoColor=white"/>
+![](https://img.shields.io/badge/STATUS-AVAILABLE_FOR_HIRE-00ff88?style=for-the-badge&logo=checkmarx&logoColor=white)
+![](https://img.shields.io/badge/LOCATION-TASHKENT%2C_UZ-00F7FF?style=for-the-badge&logo=googlemaps&logoColor=white)
+![](https://img.shields.io/badge/EXPERIENCE-2%2B_YEARS-bf5af2?style=for-the-badge)
+![](https://img.shields.io/badge/UPTIME-99.9%25-00ff88?style=for-the-badge)
 
 </div>
 
@@ -39,9 +39,7 @@
 {
   "name"      : "Shoxzod Qalandarov",
   "role"      : "System Administrator / DevOps Engineer",
-  "company"   : "Raqamli Avlod, Tashkent",
-  "period"    : "2023 – Present",
-  "education" : "Information Security | NUUz Jizzakh | 2021–2025",
+  "education" : "Information Security | NUUz Jizzakh | 2021-2025",
   "location"  : "Tashkent, Uzbekistan",
   "uptime"    : "99.9%",
   "downtime"  : "0ms",
@@ -71,7 +69,7 @@
 
 | Deployment | Infrastructure | Monitoring | Security |
 |:---:|:---:|:---:|:---:|
-| CI/CD Mastery | Linux Server Mgmt | Grafana | SIEM (Wazuh) |
+| CI/CD Mastery | Linux Server | Grafana | SIEM (Wazuh) |
 | Blue-Green Deploy | Proxmox VE / KVM | Prometheus | DLP Systems |
 | Zero-Downtime | Mikrotik RouterOS | Zabbix | Firewall/iptables |
 | Rollback Automation | Windows Server | Netdata | Kerio Control |
@@ -160,10 +158,6 @@
 <img height="180" src="https://github-readme-stats.vercel.app/api?username=salom0227&show_icons=true&theme=radical&hide_border=true&bg_color=050a0f&title_color=00F7FF&icon_color=00F7FF&text_color=c9e8ff&ring_color=bf5af2"/>
 <img height="180" src="https://github-readme-streak-stats.herokuapp.com/?user=salom0227&theme=radical&hide_border=true&background=050a0f&stroke=00F7FF&ring=bf5af2&fire=00ff88&currStreakLabel=00F7FF&sideLabels=00F7FF&dates=c9e8ff"/>
 
-</div>
-
-<div align="center">
-
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=salom0227&layout=compact&theme=radical&hide_border=true&bg_color=050a0f&title_color=00F7FF&text_color=c9e8ff&langs_count=8"/>
 
 </div>
@@ -178,19 +172,15 @@
 ╠══════════════════════════════════════════════════════════════╣
 ║                                                              ║
 ║  DEV --> GITHUB --> CI/CD ──────────────────> PRODUCTION    ║
-║   |         |         |                           |          ║
-║   |         |    ┌────┴────┐               ┌─────┴────┐    ║
-║   |         |    │ Actions │               │   K8s    │    ║
-║   |         |    │ Jenkins │               │  Docker  │    ║
-║   |         |    └────┬────┘               └─────┬────┘    ║
-║   |         |         |                           |          ║
-║   |         |    ┌────▼────┐            ┌─────────▼──────┐ ║
-║   |         |    │ Ansible │            │   Monitoring    │ ║
-║   |         |    │Terraform│            │ Grafana  Prom   │ ║
-║   |         |    └─────────┘            │ Zabbix  Netdata │ ║
-║   |         |                           └─────────────────┘ ║
-║   └─────────┴─── Zero-Downtime · Blue-Green · Rollback ──┘  ║
-║                                                              ║
+║            |    ┌──┴──────┐            ┌──────┴────────┐   ║
+║            |    │ Actions │            │  K8s / Docker │   ║
+║            |    │ Jenkins │            └──────┬────────┘   ║
+║            |    └──┬──────┘                   |             ║
+║            |    ┌──┴──────┐          ┌────────┴────────┐   ║
+║            |    │ Ansible │          │   Monitoring     │   ║
+║            |    │Terraform│          │ Grafana Prom Zab │   ║
+║            |    └─────────┘          └─────────────────┘   ║
+║            └── Zero-Downtime · Blue-Green · Rollback ───┘   ║
 ╚══════════════════════════════════════════════════════════════╝
 ```
 
@@ -204,58 +194,6 @@
 
 ---
 
-## Experience
-
-<details>
-<summary><b>System Administrator / Assistant Lecturer — Raqamli Avlod (2023–Present)</b></summary>
-
-```yaml
-position : System Administrator / Assistant Lecturer
-company  : Raqamli Avlod, Tashkent
-period   : 2023 – Present
-
-responsibilities:
-  infrastructure:
-    - Linux & Windows Server installation, configuration, maintenance
-    - Proxmox VE and KVM virtualization environment management
-    - Mikrotik RouterOS: routing, VLAN, firewall rules, VPN tunnels
-    - Network infrastructure: DNS, DHCP, TCP/IP administration
-  security:
-    - Kerio Control firewall and security policy configuration
-    - SIEM (Wazuh) and DLP systems administration
-  devops:
-    - Implementing CI/CD pipelines with GitHub Actions
-    - Setting up Blue-Green and Zero-Downtime deployments
-    - Configuring monitoring: Grafana, Prometheus, Zabbix
-  teaching:
-    - Linux server and DevOps fundamentals to students
-    - Rollback strategies and disaster recovery
-    - Docker containerization sessions
-```
-
-</details>
-
-<details>
-<summary><b>Telegram Bot & Web Developer — Freelance (2023–Present)</b></summary>
-
-```yaml
-position : Telegram Bot & Web Developer
-type     : Freelance
-period   : 2023 – Present
-
-projects:
-  - Deploying websites to VPS/VDS with zero-downtime
-  - Complex Telegram bots with database integration (Aiogram/Telebot)
-  - Automated rollback mechanisms for deployments
-  - Grafana dashboards for application monitoring
-  - Docker Compose multi-container applications
-  - Secure API integration and data exchange
-```
-
-</details>
-
----
-
 ## Skill Proficiency
 
 ```
@@ -265,9 +203,9 @@ CI/CD Pipelines        ███████████████████
 Mikrotik RouterOS      ██████████████████░░  90%
 Proxmox / KVM          █████████████████░░░  88%
 Grafana / Prometheus   █████████████████░░░  88%
+Firewall / Security    █████████████████░░░  87%
 Ansible / Terraform    █████████████████░░░  85%
 Zabbix / Monitoring    █████████████████░░░  85%
-Firewall / Security    █████████████████░░░  87%
 Python / Aiogram       ████████████████░░░░  80%
 ```
 
@@ -287,15 +225,11 @@ Python / Aiogram       ████████████████░░░
 
 <div align="center">
 
-### DevOps Philosophy
-
 > *"Automate everything. Deploy without fear. Monitor everything.*
 > *Zero downtime is not a goal — it's a standard."*
 >
 > **— Shoxzod Qalandarov**
 
-</div>
-
-<div align="center">
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:050a0f,50:00F7FF,100:050a0f&height=120&section=footer"/>
+
 </div>
