@@ -1,57 +1,52 @@
 <div align="center">
 
-<!-- ANIMATED HEADER WAVE -->
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:050a0f,50:00F7FF,100:050a0f&height=220&section=header&text=SHOXZOD%20QALANDAROV&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=System%20Administrator%20%7C%20DevOps%20Engineer&descAlignY=58&descSize=16&descColor=00F7FF"/>
 
-<!-- PROFILE VIEWS BADGE -->
 <img src="https://komarev.com/ghpvc/?username=salom0227&color=00F7FF&style=for-the-badge&label=PROFILE+VIEWS"/>
 
-<!-- TYPING ANIMATION - Multiple roles -->
-<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=700&size=22&pause=1000&color=00F7FF&center=true&vCenter=true&width=700&lines=🚀+CI%2FCD+Automation+Expert;⚡+Zero-Downtime+Deployment+Specialist;🐳+Docker+%26+Kubernetes+Engineer;🔐+Network+%26+Security+Professional;📊+Grafana+%7C+Prometheus+%7C+Zabbix+Master;🖥️+Linux+Infrastructure+Architect;🛡️+SIEM+%7C+DLP+%7C+Firewall+Specialist;🤖+Telegram+Bot+%26+Python+Developer" alt="Typing SVG"/>
+<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=700&size=20&pause=1200&color=00F7FF&center=true&vCenter=true&width=750&height=45&lines=CI%2FCD+Automation+Expert;Zero-Downtime+Deployment+Specialist;Docker+%26+Kubernetes+Engineer;Network+%26+Security+Professional;Grafana+%7C+Prometheus+%7C+Zabbix+Master;Linux+Infrastructure+Architect;SIEM+%7C+DLP+%7C+Firewall+Specialist;Telegram+Bot+%26+Python+Developer" alt="Typing SVG"/>
 
-<!-- ANIMATED STATUS BADGES -->
-<a href="https://github.com/Salom0227">
-  <img src="https://img.shields.io/badge/STATUS-AVAILABLE_FOR_HIRE-00ff88?style=for-the-badge&logo=statuspage&logoColor=white"/>
-</a>
+<br/>
+
+<img src="https://img.shields.io/badge/STATUS-AVAILABLE_FOR_HIRE-00ff88?style=for-the-badge&logo=checkmarx&logoColor=white"/>
 <img src="https://img.shields.io/badge/LOCATION-TASHKENT%2C_UZ-00F7FF?style=for-the-badge&logo=googlemaps&logoColor=white"/>
-<img src="https://img.shields.io/badge/EXPERIENCE-2%2B_YEARS-bf5af2?style=for-the-badge&logo=timeline&logoColor=white"/>
+<img src="https://img.shields.io/badge/EXPERIENCE-2%2B_YEARS-bf5af2?style=for-the-badge&logo=clockify&logoColor=white"/>
+<img src="https://img.shields.io/badge/UPTIME-99.9%25-00ff88?style=for-the-badge&logo=statuspage&logoColor=white"/>
 
 </div>
 
 ---
 
-<!-- 3D CONTRIBUTION SNAKE ANIMATION -->
 <div align="center">
 
-### 🐍 Contribution Snake
+### Contribution Snake
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Salom0227/Salom0227/output/github-contribution-grid-snake-dark.svg"/>
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Salom0227/Salom0227/output/github-contribution-grid-snake.svg"/>
-  <img alt="Snake animation" src="https://raw.githubusercontent.com/Salom0227/Salom0227/output/github-contribution-grid-snake-dark.svg"/>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/salom0227/salom0227/output/github-contribution-grid-snake-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/salom0227/salom0227/output/github-contribution-grid-snake.svg"/>
+  <img alt="Snake animation" src="https://raw.githubusercontent.com/salom0227/salom0227/output/github-contribution-grid-snake-dark.svg"/>
 </picture>
 
 </div>
 
 ---
 
-<!-- ABOUT ME - TERMINAL STYLE -->
-## <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28"/> About Me
+## About Me
 
 ```bash
 ┌─[shoxzod@devops-station]─[~]
 └──╼ $ cat whoami.json
 {
-  "name"     : "Shoxzod Qalandarov",
-  "role"     : "System Administrator / DevOps Engineer",
-  "company"  : "Raqamli Avlod, Tashkent",
-  "period"   : "2023 – Present",
-  "education": "Information Security | NUUz Jizzakh | 2021–2025",
-  "location" : "Tashkent, Uzbekistan 🇺🇿",
-  "uptime"   : "99.9%",
-  "downtime" : "0ms",
-  "languages": ["Uzbek (Native)", "English (B1)", "Russian (Elementary)"],
-  "focus"    : [
+  "name"      : "Shoxzod Qalandarov",
+  "role"      : "System Administrator / DevOps Engineer",
+  "company"   : "Raqamli Avlod, Tashkent",
+  "period"    : "2023 – Present",
+  "education" : "Information Security | NUUz Jizzakh | 2021–2025",
+  "location"  : "Tashkent, Uzbekistan",
+  "uptime"    : "99.9%",
+  "downtime"  : "0ms",
+  "languages" : ["Uzbek (Native)", "English (B1)", "Russian (Elementary)"],
+  "focus"     : [
     "Zero-Downtime Deployments",
     "Blue-Green & Canary Strategies",
     "Infrastructure as Code",
@@ -62,21 +57,19 @@
 
 ---
 
-<!-- ANIMATED ACTIVITY GRAPH -->
-## 📊 Activity Graph
+## Activity Graph
 
 <div align="center">
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=salom0227&theme=react-dark&bg_color=050a0f&color=00F7FF&line=00F7FF&point=00ff88&area=true&hide_border=true&area_color=00F7FF"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=salom0227&theme=react-dark&bg_color=050a0f&color=00F7FF&line=00F7FF&point=00ff88&area=true&hide_border=true"/>
 </div>
 
 ---
 
-<!-- CORE COMPETENCIES -->
-## 🧠 Core Competencies
+## Core Competencies
 
 <div align="center">
 
-| 🚀 Deployment | 🔧 Infrastructure | 📊 Monitoring | 🛡️ Security |
+| Deployment | Infrastructure | Monitoring | Security |
 |:---:|:---:|:---:|:---:|
 | CI/CD Mastery | Linux Server Mgmt | Grafana | SIEM (Wazuh) |
 | Blue-Green Deploy | Proxmox VE / KVM | Prometheus | DLP Systems |
@@ -88,8 +81,7 @@
 
 ---
 
-<!-- FULL TECH STACK WITH ANIMATED BADGES -->
-## 🖥️ Infrastructure
+## Infrastructure
 
 <div align="center">
 
@@ -104,7 +96,7 @@
 
 </div>
 
-## ⚙️ CI/CD & Automation
+## CI/CD & Automation
 
 <div align="center">
 
@@ -121,7 +113,7 @@
 
 </div>
 
-## 📊 Monitoring & Observability
+## Monitoring & Observability
 
 <div align="center">
 
@@ -134,7 +126,7 @@
 
 </div>
 
-## 🛡️ Network & Security
+## Network & Security
 
 <div align="center">
 
@@ -146,7 +138,7 @@
 
 </div>
 
-## 💻 Development
+## Development
 
 <div align="center">
 
@@ -161,49 +153,50 @@
 
 ---
 
-<!-- GITHUB STATS - 3 panels side by side -->
-## 📈 GitHub Stats
+## GitHub Stats
 
 <div align="center">
-  <img height="180" src="https://github-readme-stats.vercel.app/api?username=salom0227&show_icons=true&theme=radical&hide_border=true&bg_color=050a0f&title_color=00F7FF&icon_color=00F7FF&text_color=c9e8ff&ring_color=bf5af2"/>
-  <img height="180" src="https://github-readme-streak-stats.herokuapp.com/?user=Salom0227&theme=radical&hide_border=true&background=050a0f&stroke=00F7FF&ring=bf5af2&fire=00ff88&currStreakLabel=00F7FF&sideLabels=00F7FF&dates=c9e8ff"/>
+
+<img height="180" src="https://github-readme-stats.vercel.app/api?username=salom0227&show_icons=true&theme=radical&hide_border=true&bg_color=050a0f&title_color=00F7FF&icon_color=00F7FF&text_color=c9e8ff&ring_color=bf5af2"/>
+<img height="180" src="https://github-readme-streak-stats.herokuapp.com/?user=salom0227&theme=radical&hide_border=true&background=050a0f&stroke=00F7FF&ring=bf5af2&fire=00ff88&currStreakLabel=00F7FF&sideLabels=00F7FF&dates=c9e8ff"/>
+
 </div>
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=salom0227&layout=compact&theme=radical&hide_border=true&bg_color=050a0f&title_color=00F7FF&text_color=c9e8ff&langs_count=8"/>
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=salom0227&layout=compact&theme=radical&hide_border=true&bg_color=050a0f&title_color=00F7FF&text_color=c9e8ff&langs_count=8"/>
+
 </div>
 
 ---
 
-<!-- DEVOPS PIPELINE DIAGRAM ASCII ART -->
-## 🔄 DevOps Pipeline
+## DevOps Pipeline
 
 ```
-╔══════════════════════════════════════════════════════════════════════╗
-║                    SHOXZOD'S DEVOPS PIPELINE                        ║
-╠══════════════════════════════════════════════════════════════════════╣
-║                                                                      ║
-║  DEV ──► GITHUB ──► CI/CD ──────────────────► PRODUCTION            ║
-║   │         │         │                           │                  ║
-║   │         │    ┌────┴────┐                 ┌────┴────┐            ║
-║   │         │    │ Actions │                 │  K8s    │            ║
-║   │         │    │ Jenkins │                 │ Docker  │            ║
-║   │         │    └────┬────┘                 └────┬────┘            ║
-║   │         │         │                           │                  ║
-║   │         │    ┌────▼────┐               ┌──────▼──────┐         ║
-║   │         │    │ Ansible │               │  Monitoring  │         ║
-║   │         │    │Terraform│               │Grafana Prom  │         ║
-║   │         │    └─────────┘               │Zabbix Netdata│         ║
-║   │         │                              └──────────────┘         ║
-║   └─────────┴── Zero-Downtime Blue-Green Canary Rollback ───────┘   ║
-║                                                                      ║
-╚══════════════════════════════════════════════════════════════════════╝
+╔══════════════════════════════════════════════════════════════╗
+║              SHOXZOD'S DEVOPS PIPELINE                      ║
+╠══════════════════════════════════════════════════════════════╣
+║                                                              ║
+║  DEV --> GITHUB --> CI/CD ──────────────────> PRODUCTION    ║
+║   |         |         |                           |          ║
+║   |         |    ┌────┴────┐               ┌─────┴────┐    ║
+║   |         |    │ Actions │               │   K8s    │    ║
+║   |         |    │ Jenkins │               │  Docker  │    ║
+║   |         |    └────┬────┘               └─────┬────┘    ║
+║   |         |         |                           |          ║
+║   |         |    ┌────▼────┐            ┌─────────▼──────┐ ║
+║   |         |    │ Ansible │            │   Monitoring    │ ║
+║   |         |    │Terraform│            │ Grafana  Prom   │ ║
+║   |         |    └─────────┘            │ Zabbix  Netdata │ ║
+║   |         |                           └─────────────────┘ ║
+║   └─────────┴─── Zero-Downtime · Blue-Green · Rollback ──┘  ║
+║                                                              ║
+╚══════════════════════════════════════════════════════════════╝
 ```
 
 ---
 
-<!-- TROPHIES -->
-## 🏆 GitHub Trophies
+## GitHub Trophies
 
 <div align="center">
 <img src="https://github-profile-trophy.vercel.app/?username=salom0227&theme=radical&no-frame=true&no-bg=true&row=1&column=6&margin-w=4"/>
@@ -211,11 +204,10 @@
 
 ---
 
-<!-- EXPERIENCE SECTION -->
-## 💼 Experience
+## Experience
 
 <details>
-<summary><b>🏢 System Administrator / Assistant Lecturer — Raqamli Avlod (2023–Present)</b></summary>
+<summary><b>System Administrator / Assistant Lecturer — Raqamli Avlod (2023–Present)</b></summary>
 
 ```yaml
 position : System Administrator / Assistant Lecturer
@@ -228,17 +220,13 @@ responsibilities:
     - Proxmox VE and KVM virtualization environment management
     - Mikrotik RouterOS: routing, VLAN, firewall rules, VPN tunnels
     - Network infrastructure: DNS, DHCP, TCP/IP administration
-
   security:
     - Kerio Control firewall and security policy configuration
     - SIEM (Wazuh) and DLP systems administration
-    - Enterprise security hardening
-
   devops:
     - Implementing CI/CD pipelines with GitHub Actions
     - Setting up Blue-Green and Zero-Downtime deployments
     - Configuring monitoring: Grafana, Prometheus, Zabbix
-
   teaching:
     - Linux server and DevOps fundamentals to students
     - Rollback strategies and disaster recovery
@@ -248,7 +236,7 @@ responsibilities:
 </details>
 
 <details>
-<summary><b>🤖 Telegram Bot & Web Developer — Freelance (2023–Present)</b></summary>
+<summary><b>Telegram Bot & Web Developer — Freelance (2023–Present)</b></summary>
 
 ```yaml
 position : Telegram Bot & Web Developer
@@ -268,53 +256,46 @@ projects:
 
 ---
 
-<!-- CERTIFICATION / SKILLS PROGRESS -->
-## 📊 Skill Proficiency
+## Skill Proficiency
 
 ```
 Linux Administration   ████████████████████  98%
-CI/CD Pipelines        ███████████████████░  92%
 Docker / Kubernetes    ████████████████████  95%
+CI/CD Pipelines        ███████████████████░  92%
 Mikrotik RouterOS      ██████████████████░░  90%
+Proxmox / KVM          █████████████████░░░  88%
 Grafana / Prometheus   █████████████████░░░  88%
 Ansible / Terraform    █████████████████░░░  85%
 Zabbix / Monitoring    █████████████████░░░  85%
-Python / Aiogram       ████████████████░░░░  80%
 Firewall / Security    █████████████████░░░  87%
-Proxmox / KVM          █████████████████░░░  88%
+Python / Aiogram       ████████████████░░░░  80%
 ```
 
 ---
 
-<!-- CONTACT SECTION -->
-## 📫 Contact
+## Contact
 
 <div align="center">
 
 [![Email](https://img.shields.io/badge/Email-shahzodqalandarov414%40gmail.com-00F7FF?style=for-the-badge&logo=gmail&logoColor=white)](mailto:shahzodqalandarov414@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-Salom0227-bf5af2?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Salom0227)
-[![Telegram](https://img.shields.io/badge/Telegram-%2B998_94_090--02--27-229ED9?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/+99894090-02-27)
+[![GitHub](https://img.shields.io/badge/GitHub-salom0227-bf5af2?style=for-the-badge&logo=github&logoColor=white)](https://github.com/salom0227)
+[![Telegram](https://img.shields.io/badge/Telegram-%2B998_94_090--02--27-229ED9?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/salom0227)
 
 </div>
 
 ---
 
-<!-- PHILOSOPHY -->
 <div align="center">
 
-### ⚡ DevOps Philosophy
+### DevOps Philosophy
 
 > *"Automate everything. Deploy without fear. Monitor everything.*
-> *Zero downtime is not a goal — it's a standard.*
-> *If it can break, pipeline it. If it scales, Kubernetes it."*
+> *Zero downtime is not a goal — it's a standard."*
 >
-> — **Shoxzod Qalandarov**
+> **— Shoxzod Qalandarov**
 
 </div>
 
----
-
-<!-- FOOTER WAVE -->
 <div align="center">
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:050a0f,50:00F7FF,100:050a0f&height=120&section=footer"/>
 </div>
