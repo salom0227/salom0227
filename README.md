@@ -166,23 +166,10 @@
 
 ## DevOps Pipeline
 
-```
-╔══════════════════════════════════════════════════════════════╗
-║              SHOXZOD'S DEVOPS PIPELINE                      ║
-╠══════════════════════════════════════════════════════════════╣
-║                                                              ║
-║  DEV --> GITHUB --> CI/CD ──────────────────> PRODUCTION    ║
-║            |    ┌──┴──────┐            ┌──────┴────────┐   ║
-║            |    │ Actions │            │  K8s / Docker │   ║
-║            |    │ Jenkins │            └──────┬────────┘   ║
-║            |    └──┬──────┘                   |             ║
-║            |    ┌──┴──────┐          ┌────────┴────────┐   ║
-║            |    │ Ansible │          │   Monitoring     │   ║
-║            |    │Terraform│          │ Grafana Prom Zab │   ║
-║            |    └─────────┘          └─────────────────┘   ║
-║            └── Zero-Downtime · Blue-Green · Rollback ───┘   ║
-╚══════════════════════════════════════════════════════════════╝
-```
+<div align="center">
+<img src="https://raw.githubusercontent.com/salom0227/salom0227/main/pipeline.svg" alt="DevOps Pipeline"/>
+</div>
+
 
 ---
 
