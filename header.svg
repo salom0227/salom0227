@@ -1,433 +1,600 @@
-<svg width="800" height="620" viewBox="0 0 800 620" xmlns="http://www.w3.org/2000/svg">
+<svg width="800" height="1529" viewBox="0 0 800 1529" xmlns="http://www.w3.org/2000/svg">
 <defs>
 <style>
+@font-face{}
 text{font-family:'Courier New',Courier,monospace}
 
-/* ── GREEN MATRIX RAIN ── */
+/* ═══ MATRIX RAIN ═══ */
 .mc{font-size:13px;font-weight:700}
-.mc1{animation:rain1 2.8s linear infinite}
-.mc2{animation:rain1 2.2s linear infinite .4s}
-.mc3{animation:rain1 3.1s linear infinite .8s}
-.mc4{animation:rain1 2.5s linear infinite 1.2s}
-.mc5{animation:rain1 2.9s linear infinite .2s}
-.mc6{animation:rain1 2.4s linear infinite .6s}
-.mc7{animation:rain1 3.2s linear infinite 1.0s}
-.mc8{animation:rain1 2.7s linear infinite 1.4s}
-.mc9{animation:rain1 2.3s linear infinite .3s}
-.mc10{animation:rain1 3.0s linear infinite .7s}
-.mc11{animation:rain1 2.6s linear infinite 1.1s}
-.mc12{animation:rain1 2.1s linear infinite .5s}
-.mc13{animation:rain1 3.3s linear infinite .9s}
-.mc14{animation:rain1 2.8s linear infinite 1.3s}
-.mc15{animation:rain1 2.4s linear infinite .1s}
-.mc16{animation:rain1 3.0s linear infinite .6s}
-.mc17{animation:rain1 2.2s linear infinite 1.5s}
-.mc18{animation:rain1 2.9s linear infinite .4s}
-.mc19{animation:rain1 2.6s linear infinite .8s}
-.mc20{animation:rain1 3.1s linear infinite 1.2s}
-.mc21{animation:rain1 2.3s linear infinite .2s}
-.mc22{animation:rain1 2.8s linear infinite .7s}
-.mc23{animation:rain1 3.2s linear infinite 1.0s}
-.mc24{animation:rain1 2.5s linear infinite .3s}
-.mc25{animation:rain1 2.1s linear infinite 1.4s}
-.mc26{animation:rain1 3.0s linear infinite .5s}
-.mc27{animation:rain1 2.7s linear infinite .9s}
-.mc28{animation:rain1 2.4s linear infinite 1.3s}
-.mc29{animation:rain1 2.9s linear infinite .1s}
-.mc30{animation:rain1 2.6s linear infinite 1.6s}
-.mc31{animation:rain1 3.3s linear infinite .4s}
-.mc32{animation:rain1 2.2s linear infinite .8s}
-.mc33{animation:rain1 2.8s linear infinite 1.1s}
-.mc34{animation:rain1 2.5s linear infinite .6s}
-.mc35{animation:rain1 3.1s linear infinite 1.5s}
-.mc36{animation:rain1 2.3s linear infinite .2s}
-.mc37{animation:rain1 2.7s linear infinite .7s}
-.mc38{animation:rain1 3.0s linear infinite 1.3s}
-.mc39{animation:rain1 2.4s linear infinite .5s}
-.mc40{animation:rain1 2.9s linear infinite 1.7s}
-
-@keyframes rain1{
+.ra{animation:rn 2.8s linear infinite 0.0s}
+.rb{animation:rn 2.2s linear infinite 0.4s}
+.rc{animation:rn 3.1s linear infinite 0.8s}
+.rd{animation:rn 2.5s linear infinite 1.2s}
+.re{animation:rn 2.9s linear infinite 0.2s}
+.rf{animation:rn 2.4s linear infinite 0.6s}
+.rg{animation:rn 3.2s linear infinite 1.0s}
+.rh{animation:rn 2.7s linear infinite 1.4s}
+.ri{animation:rn 2.3s linear infinite 0.3s}
+.rj{animation:rn 3.0s linear infinite 0.7s}
+.rk{animation:rn 2.6s linear infinite 1.1s}
+.rl{animation:rn 2.1s linear infinite 0.5s}
+.rm{animation:rn 3.3s linear infinite 0.9s}
+.rn2{animation:rn 2.8s linear infinite 1.3s}
+.ro{animation:rn 2.4s linear infinite 0.1s}
+.rp{animation:rn 3.0s linear infinite 0.6s}
+.rq{animation:rn 2.2s linear infinite 1.5s}
+.rr{animation:rn 2.9s linear infinite 0.4s}
+.rs{animation:rn 2.6s linear infinite 0.8s}
+.rt{animation:rn 3.1s linear infinite 1.2s}
+.ru{animation:rn 2.3s linear infinite 0.2s}
+.rv{animation:rn 2.8s linear infinite 0.7s}
+.rw{animation:rn 3.2s linear infinite 1.0s}
+.rx{animation:rn 2.5s linear infinite 0.3s}
+.ry{animation:rn 2.1s linear infinite 1.4s}
+.rz{animation:rn 3.0s linear infinite 0.5s}
+@keyframes rn{
   0%  {transform:translateY(-20px);opacity:0}
-  8%  {opacity:1}
-  85% {opacity:.8}
-  100%{transform:translateY(180px);opacity:0}
+  6%  {opacity:1}
+  80% {opacity:.85}
+  100%{transform:translateY(155px);opacity:0}
 }
 
-/* ── GLITCH ── */
-.gn {font-size:28px;font-weight:700;fill:#00FF41;animation:ga 5s infinite}
-.g1 {font-size:28px;font-weight:700;fill:#ff003c;animation:g1a 5s infinite;clip-path:inset(0 0 60% 0)}
-.g2 {font-size:28px;font-weight:700;fill:#00F7FF;animation:g2a 5s infinite;clip-path:inset(60% 0 0 0)}
-@keyframes ga {0%,87%,100%{filter:none}89%{filter:drop-shadow(-4px 0 #ff003c) drop-shadow(4px 0 #00F7FF)}}
-@keyframes g1a{0%,87%,100%{transform:translate(0)}89%{transform:translate(-5px,2px)}93%{transform:translate(5px,-2px)}}
-@keyframes g2a{0%,87%,100%{transform:translate(0)}90%{transform:translate(4px,-3px)}94%{transform:translate(-4px,2px)}}
+/* ═══ GLITCH ═══ */
+.gn{font-size:32px;font-weight:700;fill:#00F7FF;animation:ga 5s infinite}
+.g1{font-size:32px;font-weight:700;fill:#ff0077;animation:g1a 5s infinite;clip-path:inset(0 0 60% 0)}
+.g2{font-size:32px;font-weight:700;fill:#00ff88;animation:g2a 5s infinite;clip-path:inset(60% 0 0 0)}
+@keyframes ga {0%,88%,100%{filter:none}90%{filter:drop-shadow(-4px 0 #ff0077) drop-shadow(4px 0 #00ff88)}}
+@keyframes g1a{0%,88%,100%{transform:translate(0,0)}90%{transform:translate(-4px,1px)}94%{transform:translate(4px,-1px)}}
+@keyframes g2a{0%,88%,100%{transform:translate(0,0)}91%{transform:translate(3px,-2px)}95%{transform:translate(-3px,1px)}}
 
-/* ── TYPING ── */
-.ty1{animation:ty1a 18s infinite}.ty2{animation:ty2a 18s infinite}
-.ty3{animation:ty3a 18s infinite}.ty4{animation:ty4a 18s infinite}.ty5{animation:ty5a 18s infinite}
+/* ═══ SCAN LINE ═══ */
+.scl{animation:scn 3s linear infinite}
+@keyframes scn{0%{transform:translateX(-100px)}100%{transform:translateX(900px)}}
+
+/* ═══ TYPING ═══ */
+.ty1{animation:ty1a 24s infinite}
+.ty2{animation:ty2a 24s infinite}
+.ty3{animation:ty3a 24s infinite}
+.ty4{animation:ty4a 24s infinite}
+.ty5{animation:ty5a 24s infinite}
+.ty6{animation:ty6a 24s infinite}
 .cur{animation:blink .65s step-end infinite}
 @keyframes blink{50%{opacity:0}}
-@keyframes ty1a{0%,17%{opacity:1}19%,100%{opacity:0}}
-@keyframes ty2a{0%,18%{opacity:0}20%,37%{opacity:1}39%,100%{opacity:0}}
-@keyframes ty3a{0%,38%{opacity:0}40%,57%{opacity:1}59%,100%{opacity:0}}
-@keyframes ty4a{0%,58%{opacity:0}60%,77%{opacity:1}79%,100%{opacity:0}}
-@keyframes ty5a{0%,78%{opacity:0}80%,97%{opacity:1}100%{opacity:0}}
+@keyframes ty1a{0%,15%{opacity:1}17%,100%{opacity:0}}
+@keyframes ty2a{0%,16%{opacity:0}18%,33%{opacity:1}35%,100%{opacity:0}}
+@keyframes ty3a{0%,34%{opacity:0}36%,51%{opacity:1}53%,100%{opacity:0}}
+@keyframes ty4a{0%,52%{opacity:0}54%,69%{opacity:1}71%,100%{opacity:0}}
+@keyframes ty5a{0%,70%{opacity:0}72%,87%{opacity:1}89%,100%{opacity:0}}
+@keyframes ty6a{0%,88%{opacity:0}90%,100%{opacity:1}}
 
-/* ── SCAN ── */
-.scan{animation:scanl 3.5s linear infinite}
-@keyframes scanl{0%{transform:translateX(-100px)}100%{transform:translateX(900px)}}
+/* ═══ PILL SHIMMER ═══ */
+.shim{animation:shm 2.5s linear infinite}
+@keyframes shm{0%{transform:translateX(-60px)}100%{transform:translateX(200px)}}
 
-/* ── LIVE DOT ── */
-.live{animation:livep 1.4s ease-in-out infinite}
-@keyframes livep{0%,100%{opacity:1}50%{opacity:.15}}
+/* ═══ LIVE DOT ═══ */
+.lv{animation:lvp 1.4s ease-in-out infinite}
+@keyframes lvp{0%,100%{opacity:1}50%{opacity:.1}}
 
-/* ── BADGE PULSE ── */
-.bp{animation:bpa 2.2s ease-in-out infinite}
-@keyframes bpa{0%,100%{opacity:.8}50%{opacity:1}}
+/* ═══ NODE GLOW ═══ */
+.nc{animation:glc 2.4s ease-in-out infinite 0.0s}
+.np{animation:glc 2.4s ease-in-out infinite 0.5s}
+.nr{animation:glc 2.4s ease-in-out infinite 1.0s}
+.nb{animation:glc 2.4s ease-in-out infinite 1.5s}
+.no{animation:glc 2.4s ease-in-out infinite 0.3s}
+.ng{animation:glc 2.4s ease-in-out infinite 0.8s}
+.ny{animation:glc 2.4s ease-in-out infinite 1.3s}
+@keyframes glc{0%,100%{filter:drop-shadow(0 0 2px currentColor)}50%{filter:drop-shadow(0 0 9px currentColor)}}
 
-/* ── NODE GLOW ── */
-.nd-c{animation:glowC 2.4s ease-in-out infinite}
-.nd-p{animation:glowP 2.4s ease-in-out infinite .4s}
-.nd-r{animation:glowR 2.4s ease-in-out infinite .8s}
-.nd-b{animation:glowB 2.4s ease-in-out infinite 1.2s}
-.nd-o{animation:glowO 2.4s ease-in-out infinite 1.6s}
-.nd-g{animation:glowG 2.4s ease-in-out infinite 2.0s}
-.nd-y{animation:glowY 2.4s ease-in-out infinite 0.6s}
-@keyframes glowC{0%,100%{filter:drop-shadow(0 0 2px #00F7FF)}50%{filter:drop-shadow(0 0 9px #00F7FF)}}
-@keyframes glowP{0%,100%{filter:drop-shadow(0 0 2px #bf5af2)}50%{filter:drop-shadow(0 0 9px #bf5af2)}}
-@keyframes glowR{0%,100%{filter:drop-shadow(0 0 2px #ff4444)}50%{filter:drop-shadow(0 0 9px #ff4444)}}
-@keyframes glowB{0%,100%{filter:drop-shadow(0 0 2px #2496ed)}50%{filter:drop-shadow(0 0 9px #2496ed)}}
-@keyframes glowO{0%,100%{filter:drop-shadow(0 0 2px #f46800)}50%{filter:drop-shadow(0 0 9px #f46800)}}
-@keyframes glowG{0%,100%{filter:drop-shadow(0 0 2px #00ff88)}50%{filter:drop-shadow(0 0 9px #00ff88)}}
-@keyframes glowY{0%,100%{filter:drop-shadow(0 0 2px #ffd60a)}50%{filter:drop-shadow(0 0 9px #ffd60a)}}
+/* ═══ EDGES ═══ */
+.ed {stroke-dasharray:7 3;animation:eda 1.1s linear infinite}
+.ed2{stroke-dasharray:7 3;animation:eda 1.3s linear infinite .4s}
+@keyframes eda{to{stroke-dashoffset:-20}}
 
-/* ── EDGES DASH ── */
-.edge{stroke-dasharray:8 4;animation:edash 1.1s linear infinite}
-.edge2{stroke-dasharray:8 4;animation:edash 1.3s linear infinite .3s}
-@keyframes edash{to{stroke-dashoffset:-24}}
+/* ═══ DATA PACKETS ═══ */
+.pk1 {animation:pk1m  2s linear infinite 0.0s}
+.pk2 {animation:pk2m  2s linear infinite 0.5s}
+.pk3 {animation:pk3m  2s linear infinite 1.0s}
+.pk4 {animation:pk4m  2s linear infinite 0.3s}
+.pk5 {animation:pk5m  2s linear infinite 0.8s}
+.pk6 {animation:pk6m  2s linear infinite 1.3s}
+.pk7 {animation:pk7m  2s linear infinite 0.6s}
+.pk8 {animation:pk8m  2s linear infinite 1.1s}
+.pk9 {animation:pk9m  2s linear infinite 0.4s}
 
-/* ── DATA PACKETS ── */
-.pk1{animation:pk1m 2.0s linear infinite}
-.pk2{animation:pk2m 2.0s linear infinite .5s}
-.pk3{animation:pk3m 2.0s linear infinite 1.0s}
-.pk4{animation:pk4m 2.0s linear infinite 0.3s}
-.pk5{animation:pk5m 2.0s linear infinite 0.8s}
-.pk6{animation:pk6m 2.0s linear infinite 1.3s}
-.pk7{animation:pk7m 2.0s linear infinite 0.6s}
-.pk8{animation:pk8m 2.0s linear infinite 1.1s}
-.pk9{animation:pk9m 2.0s linear infinite 0.4s}
-.pk10{animation:pk10m 2.0s linear infinite 0.9s}
-.pk11{animation:pk11m 2.0s linear infinite 1.4s}
-.pk12{animation:pk12m 2.0s linear infinite 0.2s}
+/* DevOps pipeline packet coords */
+@keyframes pk1m{0%{transform:translate(100px,539px);opacity:1}100%{transform:translate(144px,539px);opacity:0}}
+@keyframes pk2m{0%{transform:translate(228px,535px);opacity:1}100%{transform:translate(282px,521px);opacity:0}}
+@keyframes pk3m{0%{transform:translate(228px,543px);opacity:1}100%{transform:translate(282px,561px);opacity:0}}
+@keyframes pk4m{0%{transform:translate(374px,521px);opacity:1}100%{transform:translate(432px,521px);opacity:0}}
+@keyframes pk5m{0%{transform:translate(374px,561px);opacity:1}100%{transform:translate(432px,561px);opacity:0}}
+@keyframes pk6m{0%{transform:translate(516px,521px);opacity:1}100%{transform:translate(574px,521px);opacity:0}}
+@keyframes pk7m{0%{transform:translate(516px,561px);opacity:1}100%{transform:translate(574px,561px);opacity:0}}
+@keyframes pk8m{0%{transform:translate(654px,528px);opacity:1}100%{transform:translate(714px,535px);opacity:0}}
+@keyframes pk9m{0%{transform:translate(654px,552px);opacity:1}100%{transform:translate(714px,545px);opacity:0}}
 
-/* DevOps pipeline packets */
-@keyframes pk1m{0%{transform:translate(76,309);opacity:1}100%{transform:translate(144,309);opacity:0}}
-@keyframes pk2m{0%{transform:translate(228,309);opacity:1}100%{transform:translate(294,294);opacity:0}}
-@keyframes pk3m{0%{transform:translate(228,309);opacity:1}100%{transform:translate(294,324);opacity:0}}
-@keyframes pk4m{0%{transform:translate(398,294);opacity:1}100%{transform:translate(464,294);opacity:0}}
-@keyframes pk5m{0%{transform:translate(398,324);opacity:1}100%{transform:translate(464,324);opacity:0}}
-@keyframes pk6m{0%{transform:translate(568,302);opacity:1}100%{transform:translate(626,309);opacity:0}}
-@keyframes pk7m{0%{transform:translate(568,316);opacity:1}100%{transform:translate(626,309);opacity:0}}
+/* ═══ TERMINAL LINES FADE IN ═══ */
+.tl1{animation:tfi .4s ease forwards 0.3s;opacity:0}
+.tl2{animation:tfi .4s ease forwards 0.9s;opacity:0}
+.tl3{animation:tfi .4s ease forwards 1.5s;opacity:0}
+.tl4{animation:tfi .4s ease forwards 2.1s;opacity:0}
+.tl5{animation:tfi .4s ease forwards 2.7s;opacity:0}
+.tl6{animation:tfi .4s ease forwards 3.3s;opacity:0}
+.tl7{animation:tfi .4s ease forwards 3.9s;opacity:0}
+.tl8{animation:tfi .4s ease forwards 4.5s;opacity:0}
+.tl9{animation:tfi .4s ease forwards 5.1s;opacity:0}
+.tl10{animation:tfi .4s ease forwards 5.7s;opacity:0}
+@keyframes tfi{to{opacity:1}}
 
-/* SysAdmin pipeline packets */
-@keyframes pk8m{0%{transform:translate(50,504);opacity:1}100%{transform:translate(118,504);opacity:0}}
-@keyframes pk9m{0%{transform:translate(200,504);opacity:1}100%{transform:translate(270,494);opacity:0}}
-@keyframes pk10m{0%{transform:translate(200,504);opacity:1}100%{transform:translate(270,514);opacity:0}}
-@keyframes pk11m{0%{transform:translate(374,494);opacity:1}100%{transform:translate(444,504);opacity:0}}
-@keyframes pk12m{0%{transform:translate(374,514);opacity:1}100%{transform:translate(444,504);opacity:0}}
+/* ═══ SKILL BARS ═══ */
+.sf1{animation:sf1a 1.8s ease forwards 0.2s}
+.sf2{animation:sf2a 1.8s ease forwards 0.4s}
+.sf3{animation:sf3a 1.8s ease forwards 0.6s}
+.sf4{animation:sf4a 1.8s ease forwards 0.8s}
+.sf5{animation:sf5a 1.8s ease forwards 1.0s}
+.sf6{animation:sf6a 1.8s ease forwards 1.2s}
+.sf7{animation:sf7a 1.8s ease forwards 1.4s}
+.sf8{animation:sf8a 1.8s ease forwards 1.6s}
+.sf9{animation:sf9a 1.8s ease forwards 1.8s}
+.sf10{animation:sf10a 1.8s ease forwards 2.0s}
+.sf11{animation:sf11a 1.8s ease forwards 2.2s}
+.sf12{animation:sf12a 1.8s ease forwards 2.4s}
+.sf13{animation:sf13a 1.8s ease forwards 2.6s}
+.sf14{animation:sf14a 1.8s ease forwards 2.8s}
+.sf15{animation:sf15a 1.8s ease forwards 3.0s}
+@keyframes sf1a {0%{width:0}100%{width:186px}}
+@keyframes sf2a {0%{width:0}100%{width:178px}}
+@keyframes sf3a {0%{width:0}100%{width:182px}}
+@keyframes sf4a {0%{width:0}100%{width:163px}}
+@keyframes sf5a {0%{width:0}100%{width:177px}}
+@keyframes sf6a {0%{width:0}100%{width:173px}}
+@keyframes sf7a {0%{width:0}100%{width:169px}}
+@keyframes sf8a {0%{width:0}100%{width:167px}}
+@keyframes sf9a {0%{width:0}100%{width:163px}}
+@keyframes sf10a{0%{width:0}100%{width:173px}}
+@keyframes sf11a{0%{width:0}100%{width:169px}}
+@keyframes sf12a{0%{width:0}100%{width:157px}}
+@keyframes sf13a{0%{width:0}100%{width:163px}}
+@keyframes sf14a{0%{width:0}100%{width:154px}}
+@keyframes sf15a{0%{width:0}100%{width:167px}}
 
-/* ── SKILL BARS ── */
-.sb1{animation:sbfill 1.8s ease forwards .2s}
-.sb2{animation:sbfill2 1.8s ease forwards .4s}
-.sb3{animation:sbfill3 1.8s ease forwards .6s}
-.sb4{animation:sbfill4 1.8s ease forwards .8s}
-.sb5{animation:sbfill5 1.8s ease forwards 1.0s}
-.sb6{animation:sbfill6 1.8s ease forwards 1.2s}
-@keyframes sbfill {0%{width:0}100%{width:186px}}
-@keyframes sbfill2{0%{width:0}100%{width:181px}}
-@keyframes sbfill3{0%{width:0}100%{width:175px}}
-@keyframes sbfill4{0%{width:0}100%{width:172px}}
-@keyframes sbfill5{0%{width:0}100%{width:168px}}
-@keyframes sbfill6{0%{width:0}100%{width:162px}}
+/* ═══ STAT COUNTERS ═══ */
+.st-num{animation:stfa 1s ease forwards 0.5s;opacity:0}
+@keyframes stfa{to{opacity:1}}
 </style>
 
-<!-- ARROW MARKERS -->
-<defs>
+<!-- MARKERS -->
 <marker id="ac" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3z" fill="#00F7FF"/></marker>
-<marker id="ap" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3z" fill="#bf5af2"/></marker>
-<marker id="ar" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3z" fill="#ff4444"/></marker>
+<marker id="ap" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3z" fill="#a78bfa"/></marker>
+<marker id="ar" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3z" fill="#ff8888"/></marker>
 <marker id="ab" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3z" fill="#2496ed"/></marker>
+<marker id="ab2" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3z" fill="#326ce5"/></marker>
 <marker id="ao" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3z" fill="#f46800"/></marker>
-<marker id="ag" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3z" fill="#00ff88"/></marker>
-<marker id="ay" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3z" fill="#ffd60a"/></marker>
-<linearGradient id="scangr" x1="0" x2="1"><stop offset="0" stop-color="#00FF41" stop-opacity="0"/><stop offset=".5" stop-color="#00FF41" stop-opacity=".6"/><stop offset="1" stop-color="#00FF41" stop-opacity="0"/></linearGradient>
+<marker id="ar2" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3z" fill="#ff6b6b"/></marker>
+<marker id="apu" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3z" fill="#c084fc"/></marker>
+<clipPath id="mcclip"><rect x="0" y="0" width="800" height="160"/></clipPath>
+<linearGradient id="scgr" x1="0" x2="1" y1="0" y2="0">
+  <stop offset="0" stop-color="#00F7FF" stop-opacity="0"/>
+  <stop offset="0.5" stop-color="#00F7FF" stop-opacity="0.5"/>
+  <stop offset="1" stop-color="#00F7FF" stop-opacity="0"/>
+</linearGradient>
 </defs>
-</defs>
 
-<!-- ═══ BACKGROUND ═══ -->
-<rect width="800" height="620" fill="#020c02"/>
+<!-- ═══════════════════════════════════════════════════════
+     BACKGROUND
+════════════════════════════════════════════════════════ -->
+<rect width="800" height="1529" fill="#050a0f"/>
 
-<!-- ═══ GREEN MATRIX RAIN ═══ -->
-<!-- Column 1 -->
-<text class="mc mc1"  x="8"   fill="#00FF41">ア</text><text class="mc mc2"  x="8"   fill="#00cc33" dy="18">1</text><text class="mc mc3"  x="8"   fill="#009922" dy="36">K</text>
-<!-- Column 2 -->
-<text class="mc mc4"  x="26"  fill="#00cc33">0</text><text class="mc mc5"  x="26"  fill="#00FF41" dy="16">イ</text><text class="mc mc6"  x="26"  fill="#007711" dy="32">P</text>
-<!-- Column 3 -->
-<text class="mc mc7"  x="44"  fill="#00FF41">ウ</text><text class="mc mc8"  x="44"  fill="#00cc33" dy="20">A</text><text class="mc mc9"  x="44"  fill="#009922" dy="40">エ</text>
-<!-- Column 4 -->
-<text class="mc mc10" x="62"  fill="#00cc33">1</text><text class="mc mc11" x="62"  fill="#00FF41" dy="18">C</text><text class="mc mc12" x="62"  fill="#007711" dy="36">オ</text>
-<!-- Column 5 -->
-<text class="mc mc13" x="80"  fill="#00FF41">K</text><text class="mc mc14" x="80"  fill="#00cc33" dy="22">カ</text><text class="mc mc15" x="80"  fill="#009922" dy="44">N</text>
-<!-- Column 6 -->
-<text class="mc mc16" x="98"  fill="#00cc33">0</text><text class="mc mc17" x="98"  fill="#00FF41" dy="16">キ</text>
-<!-- Column 7 -->
-<text class="mc mc18" x="116" fill="#00FF41">S</text><text class="mc mc19" x="116" fill="#00cc33" dy="20">ク</text><text class="mc mc20" x="116" fill="#007711" dy="40">1</text>
-<!-- Column 8 -->
-<text class="mc mc21" x="134" fill="#00cc33">ケ</text><text class="mc mc22" x="134" fill="#00FF41" dy="18">B</text>
-<!-- Column 9 -->
-<text class="mc mc23" x="152" fill="#00FF41">コ</text><text class="mc mc24" x="152" fill="#00cc33" dy="24">H</text><text class="mc mc25" x="152" fill="#009922" dy="48">サ</text>
-<!-- Column 10 -->
-<text class="mc mc26" x="170" fill="#00cc33">0</text><text class="mc mc27" x="170" fill="#00FF41" dy="20">シ</text>
-
-<!-- RIGHT SIDE columns -->
-<text class="mc mc28" x="630" fill="#00FF41">ス</text><text class="mc mc29" x="630" fill="#00cc33" dy="18">A</text>
-<text class="mc mc30" x="648" fill="#00cc33">セ</text><text class="mc mc31" x="648" fill="#00FF41" dy="22">1</text><text class="mc mc32" x="648" fill="#007711" dy="44">ソ</text>
-<text class="mc mc33" x="666" fill="#00FF41">M</text><text class="mc mc34" x="666" fill="#00cc33" dy="16">タ</text>
-<text class="mc mc35" x="684" fill="#00cc33">B</text><text class="mc mc36" x="684" fill="#00FF41" dy="20">チ</text><text class="mc mc37" x="684" fill="#009922" dy="40">L</text>
-<text class="mc mc38" x="702" fill="#00FF41">ツ</text><text class="mc mc39" x="702" fill="#00cc33" dy="18">E</text>
-<text class="mc mc40" x="720" fill="#00cc33">テ</text>
-<text class="mc mc1"  x="738" fill="#00FF41" style="animation-delay:.7s">ト</text><text class="mc mc2"  x="738" fill="#00cc33" style="animation-delay:.7s" dy="20">P</text>
-<text class="mc mc3"  x="756" fill="#00FF41" style="animation-delay:1.1s">ナ</text><text class="mc mc4"  x="756" fill="#00cc33" style="animation-delay:1.1s" dy="18">S</text>
-<text class="mc mc5"  x="774" fill="#00cc33" style="animation-delay:.4s">W</text><text class="mc mc6"  x="774" fill="#00FF41" style="animation-delay:.4s" dy="22">ニ</text>
-
-<!-- SCAN LINE -->
-<rect class="scan" y="0" width="70" height="170" fill="url(#scangr)" opacity=".18"/>
+<!-- ═══ MATRIX RAIN ═══ -->
+<g clip-path="url(#mcclip)" opacity=".85">
+<text class="mc ra" x="8" y="0" fill="#00F7FF">ア</text>
+<text class="mc rn2" x="8" y="0" fill="#005577" style="animation-delay:0.00s">ク</text>
+<text class="mc rb" x="28" y="0" fill="#00bcd4">イ</text>
+<text class="mc ro" x="28" y="0" fill="#00F7FF" style="animation-delay:0.11s">ケ</text>
+<text class="mc rc" x="48" y="0" fill="#005577">ウ</text>
+<text class="mc rp" x="48" y="0" fill="#00bcd4" style="animation-delay:0.22s">コ</text>
+<text class="mc rd" x="68" y="0" fill="#00F7FF">エ</text>
+<text class="mc rq" x="68" y="0" fill="#00F7FF" style="animation-delay:0.33s">サ</text>
+<text class="mc re" x="88" y="0" fill="#00bcd4">オ</text>
+<text class="mc rr" x="88" y="0" fill="#00bcd4" style="animation-delay:0.44s">シ</text>
+<text class="mc rf" x="108" y="0" fill="#00F7FF">カ</text>
+<text class="mc rs" x="108" y="0" fill="#005577" style="animation-delay:0.55s">ス</text>
+<text class="mc rg" x="128" y="0" fill="#00bcd4">キ</text>
+<text class="mc rt" x="128" y="0" fill="#00F7FF" style="animation-delay:0.66s">セ</text>
+<text class="mc rh" x="148" y="0" fill="#005577">ク</text>
+<text class="mc ru" x="148" y="0" fill="#00bcd4" style="animation-delay:0.77s">ソ</text>
+<text class="mc ri" x="168" y="0" fill="#00F7FF">ケ</text>
+<text class="mc rv" x="168" y="0" fill="#00F7FF" style="animation-delay:0.88s">A</text>
+<text class="mc rj" x="188" y="0" fill="#00bcd4">コ</text>
+<text class="mc rw" x="188" y="0" fill="#00bcd4" style="animation-delay:0.99s">B</text>
+<text class="mc rk" x="208" y="0" fill="#00F7FF">サ</text>
+<text class="mc rx" x="208" y="0" fill="#005577" style="animation-delay:1.10s">C</text>
+<text class="mc rl" x="228" y="0" fill="#00bcd4">シ</text>
+<text class="mc ry" x="228" y="0" fill="#00F7FF" style="animation-delay:1.21s">D</text>
+<text class="mc rm" x="248" y="0" fill="#005577">ス</text>
+<text class="mc rz" x="248" y="0" fill="#00bcd4" style="animation-delay:1.32s">E</text>
+<text class="mc rn2" x="268" y="0" fill="#00F7FF">セ</text>
+<text class="mc ra" x="268" y="0" fill="#00F7FF" style="animation-delay:1.43s">F</text>
+<text class="mc ro" x="530" y="0" fill="#00bcd4">ソ</text>
+<text class="mc rb" x="530" y="0" fill="#00bcd4" style="animation-delay:1.54s">G</text>
+<text class="mc rp" x="550" y="0" fill="#00F7FF">A</text>
+<text class="mc rc" x="550" y="0" fill="#005577" style="animation-delay:0.05s">H</text>
+<text class="mc rq" x="570" y="0" fill="#00bcd4">B</text>
+<text class="mc rd" x="570" y="0" fill="#00F7FF" style="animation-delay:0.16s">K</text>
+<text class="mc rr" x="590" y="0" fill="#005577">C</text>
+<text class="mc re" x="590" y="0" fill="#00bcd4" style="animation-delay:0.27s">M</text>
+<text class="mc rs" x="610" y="0" fill="#00F7FF">D</text>
+<text class="mc rf" x="610" y="0" fill="#00F7FF" style="animation-delay:0.38s">N</text>
+<text class="mc rt" x="630" y="0" fill="#00bcd4">E</text>
+<text class="mc rg" x="630" y="0" fill="#00bcd4" style="animation-delay:0.49s">0</text>
+<text class="mc ru" x="650" y="0" fill="#00F7FF">F</text>
+<text class="mc rh" x="650" y="0" fill="#005577" style="animation-delay:0.60s">1</text>
+<text class="mc rv" x="670" y="0" fill="#00bcd4">G</text>
+<text class="mc ri" x="670" y="0" fill="#00F7FF" style="animation-delay:0.71s">2</text>
+<text class="mc rw" x="690" y="0" fill="#005577">H</text>
+<text class="mc rj" x="690" y="0" fill="#00bcd4" style="animation-delay:0.82s">P</text>
+<text class="mc rx" x="710" y="0" fill="#00F7FF">K</text>
+<text class="mc rk" x="710" y="0" fill="#00F7FF" style="animation-delay:0.93s">S</text>
+<text class="mc ry" x="730" y="0" fill="#00bcd4">M</text>
+<text class="mc rl" x="730" y="0" fill="#00bcd4" style="animation-delay:1.04s">タ</text>
+<text class="mc rz" x="750" y="0" fill="#00F7FF">N</text>
+<text class="mc rm" x="750" y="0" fill="#005577" style="animation-delay:1.15s">チ</text>
+<text class="mc ra" x="770" y="0" fill="#00bcd4">0</text>
+<text class="mc rn2" x="770" y="0" fill="#00F7FF" style="animation-delay:1.26s">ツ</text>
+<text class="mc rb" x="790" y="0" fill="#005577">1</text>
+<text class="mc ro" x="790" y="0" fill="#00bcd4" style="animation-delay:1.37s">テ</text>
+</g>
+<rect class="scl" y="0" width="80" height="160" fill="url(#scgr)" opacity=".18"/>
 
 <!-- ═══ HERO AREA ═══ -->
-<rect x="0" y="150" width="800" height="105" fill="#020c02" opacity=".95"/>
-<line x1="0" y1="150" x2="800" y2="150" stroke="#00FF41" stroke-width=".8" opacity=".3"/>
-<line x1="0" y1="255" x2="800" y2="255" stroke="#00FF41" stroke-width=".5" opacity=".15"/>
+<rect x="0" y="155" width="800" height="110" fill="#0a1520" opacity=".97"/>
+<rect x="0" y="155" width="800" height="2" fill="#00F7FF" opacity=".15"/>
+<rect x="0" y="155" width="800" height="1" fill="url(#scgr)" opacity=".5"/>
 
-<!-- GLITCH NAME -->
-<text class="g1" x="400" y="196" text-anchor="middle">SHOXZOD  QALANDAROV</text>
-<text class="g2" x="400" y="196" text-anchor="middle">SHOXZOD  QALANDAROV</text>
-<text class="gn"  x="400" y="196" text-anchor="middle">SHOXZOD  QALANDAROV</text>
+<!-- Glitch Name -->
+<text class="g1" x="400" y="206" text-anchor="middle">SHOXZOD QALANDAROV</text>
+<text class="g2" x="400" y="206" text-anchor="middle">SHOXZOD QALANDAROV</text>
+<text class="gn"  x="400" y="206" text-anchor="middle">SHOXZOD QALANDAROV</text>
 
-<!-- SUBTITLE -->
-<text x="400" y="215" text-anchor="middle" fill="#1a6a2a" font-size="10" letter-spacing="4">SYSTEM ADMINISTRATOR  ·  DEVOPS ENGINEER</text>
+<text x="400" y="224" text-anchor="middle" fill="#1a4a6a" font-size="10" letter-spacing="4">SYSTEM ADMINISTRATOR  ·  DEVOPS ENGINEER</text>
 
-<!-- TYPING -->
-<text class="ty1" x="400" y="233" text-anchor="middle" fill="#00cc55" font-size="11">CI/CD Automation Expert<tspan class="cur" fill="#00FF41"> ▋</tspan></text>
-<text class="ty2" x="400" y="233" text-anchor="middle" fill="#00cc55" font-size="11">Zero-Downtime Deployment Specialist<tspan class="cur" fill="#00FF41"> ▋</tspan></text>
-<text class="ty3" x="400" y="233" text-anchor="middle" fill="#00cc55" font-size="11">Linux · Kubernetes · Docker · Ansible<tspan class="cur" fill="#00FF41"> ▋</tspan></text>
-<text class="ty4" x="400" y="233" text-anchor="middle" fill="#00cc55" font-size="11">Mikrotik · Proxmox · SIEM · Firewall<tspan class="cur" fill="#00FF41"> ▋</tspan></text>
-<text class="ty5" x="400" y="233" text-anchor="middle" fill="#00cc55" font-size="11">Grafana · Prometheus · Zabbix · ELK<tspan class="cur" fill="#00FF41"> ▋</tspan></text>
+<!-- Typing lines -->
+<text class="ty1" x="400" y="243" text-anchor="middle" fill="#00bcd4" font-size="11">CI/CD Automation Expert<tspan class="cur" fill="#00F7FF"> ▋</tspan></text>
+<text class="ty2" x="400" y="243" text-anchor="middle" fill="#00bcd4" font-size="11">Zero-Downtime Specialist<tspan class="cur" fill="#00F7FF"> ▋</tspan></text>
+<text class="ty3" x="400" y="243" text-anchor="middle" fill="#00bcd4" font-size="11">Linux Infrastructure Pro<tspan class="cur" fill="#00F7FF"> ▋</tspan></text>
+<text class="ty4" x="400" y="243" text-anchor="middle" fill="#00bcd4" font-size="11">Mikrotik Network Engineer<tspan class="cur" fill="#00F7FF"> ▋</tspan></text>
+<text class="ty5" x="400" y="243" text-anchor="middle" fill="#00bcd4" font-size="11">Kubernetes &amp; Docker Expert<tspan class="cur" fill="#00F7FF"> ▋</tspan></text>
+<text class="ty6" x="400" y="243" text-anchor="middle" fill="#00bcd4" font-size="11">SIEM/DLP Security Specialist<tspan class="cur" fill="#00F7FF"> ▋</tspan></text>
 
-<!-- STATUS PILLS -->
-<g class="bp">
-  <rect x="110" y="242" width="138" height="18" rx="9" fill="#001a05" stroke="#00FF41" stroke-width="1"/>
-  <circle cx="123" cy="251" r="3.5" fill="#00FF41"><animate attributeName="opacity" values="1;.15;1" dur="1.4s" repeatCount="indefinite"/></circle>
-  <text x="220" y="255" text-anchor="middle" fill="#00FF41" font-size="8.5" font-weight="700">Available for hire</text>
+<!-- Status Pills -->
+<rect x="102" y="255" width="142" height="19" rx="9" fill="#0d1f2d" stroke="#00ff88" stroke-width="1"/>
+<clipPath id="p1clip"><rect x="102" y="255" width="142" height="19" rx="9"/></clipPath>
+<rect class="shim" x="102" y="255" width="40" height="19" fill="url(#scgr)" opacity=".25" clip-path="url(#p1clip)"/>
+<circle cx="116" cy="264" r="3.5" fill="#00ff88" class="lv"/>
+<text x="222" y="268" text-anchor="middle" fill="#00ff88" font-size="9" font-weight="700">Available for hire</text>
+
+<rect x="252" y="255" width="158" height="19" rx="9" fill="#0d1f2d" stroke="#00F7FF" stroke-width="1"/>
+<clipPath id="p2clip"><rect x="252" y="255" width="158" height="19" rx="9"/></clipPath>
+<rect class="shim" x="252" y="255" width="40" height="19" fill="url(#scgr)" opacity=".2" clip-path="url(#p2clip)"/>
+<text x="331" y="268" text-anchor="middle" fill="#00F7FF" font-size="9">Raqamli Avlod · 2023–Present</text>
+
+<rect x="418" y="255" width="188" height="19" rx="9" fill="#0d1f2d" stroke="#bf5af2" stroke-width="1"/>
+<clipPath id="p3clip"><rect x="418" y="255" width="188" height="19" rx="9"/></clipPath>
+<rect class="shim" x="418" y="255" width="40" height="19" fill="url(#scgr)" opacity=".2" clip-path="url(#p3clip)"/>
+<text x="512" y="268" text-anchor="middle" fill="#bf5af2" font-size="9">Information Security · 2021–2025</text>
+
+<line x1="20" y1="285" x2="780" y2="285" stroke="#00F7FF" stroke-width=".5" opacity=".15"/>
+<text x="20" y="303" fill="#00F7FF" font-size="9" font-weight="700" letter-spacing="3">TERMINAL</text>
+<line x1="72" y1="300" x2="775" y2="300" stroke="#00F7FF18" stroke-width=".8"/>
+
+
+<rect x="20" y="309" width="760" height="156" rx="8" fill="#030d13" stroke="#00F7FF33" stroke-width="1"/>
+<rect x="20" y="309" width="760" height="24" rx="8" fill="#081520"/>
+<rect x="20" y="321" width="760" height="12" fill="#081520"/>
+<circle cx="36"  cy="321" r="5" fill="#ff5f57"/>
+<circle cx="53"  cy="321" r="5" fill="#febc2e"/>
+<circle cx="70"  cy="321" r="5" fill="#28c840"/>
+<text x="84" y="325" fill="#3a6a8a" font-size="9">shoxzod@devops-station:~$</text>
+
+<text class="tl1" x="32" y="345" fill="#00ff88" font-size="9">shoxzod@devops:~$<tspan fill="#7ec8e3"> cat whoami.json</tspan></text>
+<text class="tl2" x="44" y="358" fill="#a8c8a8" font-size="8">{ "name": "Shoxzod Qalandarov", "role": "SysAdmin/DevOps", "exp": "2023-present" }</text>
+<text class="tl3" x="32" y="371" fill="#00ff88" font-size="9">shoxzod@devops:~$<tspan fill="#7ec8e3"> systemctl status nginx grafana prometheus</tspan></text>
+<text class="tl4" x="44" y="383" fill="#00ff88" font-size="8">● nginx.service Active: active (running)   ● grafana.service Active: active (running)</text>
+<text class="tl5" x="32" y="396" fill="#00ff88" font-size="9">shoxzod@devops:~$<tspan fill="#7ec8e3"> kubectl get nodes</tspan></text>
+<text class="tl6" x="44" y="408" fill="#a8c8a8" font-size="8">master-node  Ready  control-plane  30d  v1.28.0    worker-01  Ready  none  30d  v1.28.0</text>
+<text class="tl7" x="32" y="421" fill="#00ff88" font-size="9">shoxzod@devops:~$<tspan fill="#7ec8e3"> terraform apply -auto-approve</tspan></text>
+<text class="tl8" x="44" y="433" fill="#00ff88" font-size="8">Apply complete! Resources: 4 added, 1 changed, 0 destroyed.</text>
+<text class="tl9" x="32" y="446" fill="#00ff88" font-size="9">shoxzod@devops:~$<tspan fill="#7ec8e3"> ansible-playbook deploy.yml</tspan></text>
+<text class="tl10" x="44" y="458" fill="#00ff88" font-size="8">PLAY RECAP: ok=18  changed=6  unreachable=0  failed=0<tspan fill="#00F7FF">  ■</tspan></text>
+
+<line x1="20" y1="477" x2="780" y2="477" stroke="#00F7FF" stroke-width=".5" opacity=".15"/>
+<text x="20" y="495" fill="#00F7FF" font-size="9" font-weight="700" letter-spacing="3">DEVOPS ARCHITECTURE</text>
+<line x1="149" y1="492" x2="775" y2="492" stroke="#00F7FF18" stroke-width=".8"/>
+<circle cx="770" cy="489" r="4" fill="#00ff88" class="lv"/>
+
+<line class="ed" x1="100" y1="539" x2="144" y2="539" stroke="#00F7FF" stroke-width="1.4" marker-end="url(#ac)"/>
+<line class="ed" x1="228" y1="531" x2="282" y2="521" stroke="#a78bfa" stroke-width="1.4" marker-end="url(#ap)"/>
+<line class="ed2" x1="228" y1="547" x2="282" y2="561" stroke="#ff8888" stroke-width="1.4" marker-end="url(#ar)"/>
+<line class="ed" x1="374" y1="521" x2="432" y2="521" stroke="#2496ed" stroke-width="1.4" marker-end="url(#ab)"/>
+<line class="ed2" x1="374" y1="561" x2="432" y2="561" stroke="#326ce5" stroke-width="1.4" marker-end="url(#ab2)"/>
+<line class="ed" x1="516" y1="521" x2="574" y2="521" stroke="#ff6b6b" stroke-width="1.4" marker-end="url(#ar2)"/>
+<line class="ed2" x1="516" y1="561" x2="574" y2="561" stroke="#c084fc" stroke-width="1.4" marker-end="url(#apu)"/>
+<line class="ed" x1="654" y1="521" x2="714" y2="533" stroke="#f46800" stroke-width="1.4" marker-end="url(#ao)"/>
+<line class="ed2" x1="654" y1="561" x2="714" y2="547" stroke="#f46800" stroke-width="1.4" marker-end="url(#ao)"/>
+<circle class="pk1" r="3.5" fill="#00F7FF"/>
+<circle class="pk2" r="3.5" fill="#a78bfa"/>
+<circle class="pk3" r="3.5" fill="#ff8888"/>
+<circle class="pk4" r="3.5" fill="#2496ed"/>
+<circle class="pk5" r="3.5" fill="#326ce5"/>
+<circle class="pk6" r="3.5" fill="#ff6b6b"/>
+<circle class="pk7" r="3.5" fill="#c084fc"/>
+<circle class="pk8" r="3.5" fill="#f46800"/>
+<circle class="pk9" r="3.5" fill="#f46800"/>
+<g class="nc" color="#00F7FF">
+  <rect x="20" y="523" width="80" height="32" rx="5" fill="#071525" stroke="#00F7FF" stroke-width="1.4"/>
+  <text x="60" y="543" text-anchor="middle" fill="#00F7FF" font-size="9" font-weight="700">Dev</text>
 </g>
-<rect x="256" y="242" width="124" height="18" rx="9" fill="#001a05" stroke="#00cc55" stroke-width="1"/>
-<text x="318" y="255" text-anchor="middle" fill="#00cc55" font-size="8.5">Raqamli Avlod · 2023–Now</text>
-<rect x="388" y="242" width="160" height="18" rx="9" fill="#001a05" stroke="#009922" stroke-width="1"/>
-<text x="468" y="255" text-anchor="middle" fill="#009922" font-size="8.5">InfoSec Bachelor · 2021–2025</text>
+<g class="np" color="#7c3aed">
+  <rect x="144" y="523" width="84" height="32" rx="5" fill="#0d0020" stroke="#7c3aed" stroke-width="1.4"/>
+  <text x="186" y="543" text-anchor="middle" fill="#a78bfa" font-size="9" font-weight="700">GitHub</text>
+</g>
+<g class="np" color="#bf5af2">
+  <rect x="282" y="507" width="92" height="28" rx="5" fill="#0d0020" stroke="#bf5af2" stroke-width="1.4"/>
+  <text x="328" y="525" text-anchor="middle" fill="#bf5af2" font-size="9" font-weight="700">GH Actions</text>
+</g>
+<g class="nr" color="#cc3333">
+  <rect x="282" y="547" width="92" height="28" rx="5" fill="#1a0000" stroke="#cc3333" stroke-width="1.4"/>
+  <text x="328" y="565" text-anchor="middle" fill="#ff8888" font-size="9" font-weight="700">Jenkins</text>
+</g>
+<g class="nb" color="#2496ed">
+  <rect x="432" y="507" width="84" height="28" rx="5" fill="#001020" stroke="#2496ed" stroke-width="1.4"/>
+  <text x="474" y="525" text-anchor="middle" fill="#6bbaff" font-size="9" font-weight="700">Docker</text>
+</g>
+<g class="nb" color="#326ce5">
+  <rect x="432" y="547" width="84" height="28" rx="5" fill="#001020" stroke="#326ce5" stroke-width="1.4"/>
+  <text x="474" y="565" text-anchor="middle" fill="#6ba3ff" font-size="9" font-weight="700">K8s</text>
+</g>
+<g class="nr" color="#cc0000">
+  <rect x="574" y="507" width="80" height="28" rx="5" fill="#1a0000" stroke="#cc0000" stroke-width="1.4"/>
+  <text x="614" y="525" text-anchor="middle" fill="#ff6b6b" font-size="9" font-weight="700">Ansible</text>
+</g>
+<g class="np" color="#7b42bc">
+  <rect x="574" y="547" width="80" height="28" rx="5" fill="#0d0020" stroke="#7b42bc" stroke-width="1.4"/>
+  <text x="614" y="565" text-anchor="middle" fill="#c084fc" font-size="9" font-weight="700">Terraform</text>
+</g>
+<g class="no" color="#f46800">
+  <rect x="714" y="514" width="78" height="58" rx="5" fill="#1a0800" stroke="#f46800" stroke-width="1.4"/>
+  <text x="753" y="528" text-anchor="middle" fill="#f46800"  font-size="8" font-weight="700">Monitor</text>
+  <text x="753" y="540" text-anchor="middle" fill="#cc5500"  font-size="7">Grafana</text>
+  <text x="753" y="551" text-anchor="middle" fill="#cc5500"  font-size="7">Prometheus</text>
+  <text x="753" y="562" text-anchor="middle" fill="#cc5500"  font-size="7">Zabbix</text>
+</g>
+<line x1="20" y1="599" x2="780" y2="599" stroke="#00F7FF" stroke-width=".5" opacity=".15"/>
+<text x="20" y="617" fill="#00F7FF" font-size="9" font-weight="700" letter-spacing="3">SKILL LEVELS</text>
+<line x1="100" y1="614" x2="775" y2="614" stroke="#00F7FF18" stroke-width=".8"/>
 
-<!-- ═══ DIVIDER ═══ -->
-<line x1="20" y1="270" x2="780" y2="270" stroke="#00FF41" stroke-width=".5" opacity=".2"/>
+<rect x="20" y="625" width="248" height="38" rx="6" fill="#071525" stroke="#00F7FF18" stroke-width="1"/>
+<text x="30" y="639" fill="#00F7FF" font-size="9" font-weight="700">Linux Admin</text>
+<rect x="30" y="645" width="195" height="6" rx="3" fill="#0a1a26"/>
+<rect class="sf1" x="30" y="645" height="6" rx="3" fill="#00F7FF" width="0"/>
+<text x="230" y="652" fill="#00F7FF" font-size="8">98%</text>
+<rect x="278" y="625" width="248" height="38" rx="6" fill="#071525" stroke="#00F7FF18" stroke-width="1"/>
+<text x="288" y="639" fill="#00bcd4" font-size="9" font-weight="700">Nginx/Apache</text>
+<rect x="288" y="645" width="195" height="6" rx="3" fill="#0a1a26"/>
+<rect class="sf2" x="288" y="645" height="6" rx="3" fill="#00bcd4" width="0"/>
+<text x="488" y="652" fill="#00bcd4" font-size="8">93%</text>
+<rect x="536" y="625" width="248" height="38" rx="6" fill="#071525" stroke="#00F7FF18" stroke-width="1"/>
+<text x="546" y="639" fill="#2496ed" font-size="9" font-weight="700">Docker</text>
+<rect x="546" y="645" width="195" height="6" rx="3" fill="#0a1a26"/>
+<rect class="sf3" x="546" y="645" height="6" rx="3" fill="#2496ed" width="0"/>
+<text x="746" y="652" fill="#2496ed" font-size="8">95%</text>
+<rect x="20" y="671" width="248" height="38" rx="6" fill="#071525" stroke="#00F7FF18" stroke-width="1"/>
+<text x="30" y="685" fill="#326ce5" font-size="9" font-weight="700">Kubernetes</text>
+<rect x="30" y="691" width="195" height="6" rx="3" fill="#0a1a26"/>
+<rect class="sf4" x="30" y="691" height="6" rx="3" fill="#326ce5" width="0"/>
+<text x="230" y="698" fill="#326ce5" font-size="8">85%</text>
+<rect x="278" y="671" width="248" height="38" rx="6" fill="#071525" stroke="#00F7FF18" stroke-width="1"/>
+<text x="288" y="685" fill="#bf5af2" font-size="9" font-weight="700">CI/CD Pipelines</text>
+<rect x="288" y="691" width="195" height="6" rx="3" fill="#0a1a26"/>
+<rect class="sf5" x="288" y="691" height="6" rx="3" fill="#bf5af2" width="0"/>
+<text x="488" y="698" fill="#bf5af2" font-size="8">92%</text>
+<rect x="536" y="671" width="248" height="38" rx="6" fill="#071525" stroke="#00F7FF18" stroke-width="1"/>
+<text x="546" y="685" fill="#a855f7" font-size="9" font-weight="700">GitHub Actions</text>
+<rect x="546" y="691" width="195" height="6" rx="3" fill="#0a1a26"/>
+<rect class="sf6" x="546" y="691" height="6" rx="3" fill="#a855f7" width="0"/>
+<text x="746" y="698" fill="#a855f7" font-size="8">90%</text>
+<rect x="20" y="717" width="248" height="38" rx="6" fill="#071525" stroke="#00F7FF18" stroke-width="1"/>
+<text x="30" y="731" fill="#f46800" font-size="9" font-weight="700">Grafana</text>
+<rect x="30" y="737" width="195" height="6" rx="3" fill="#0a1a26"/>
+<rect class="sf7" x="30" y="737" height="6" rx="3" fill="#f46800" width="0"/>
+<text x="230" y="744" fill="#f46800" font-size="8">88%</text>
+<rect x="278" y="717" width="248" height="38" rx="6" fill="#071525" stroke="#00F7FF18" stroke-width="1"/>
+<text x="288" y="731" fill="#fb923c" font-size="9" font-weight="700">Prometheus</text>
+<rect x="288" y="737" width="195" height="6" rx="3" fill="#0a1a26"/>
+<rect class="sf8" x="288" y="737" height="6" rx="3" fill="#fb923c" width="0"/>
+<text x="488" y="744" fill="#fb923c" font-size="8">87%</text>
+<rect x="536" y="717" width="248" height="38" rx="6" fill="#071525" stroke="#00F7FF18" stroke-width="1"/>
+<text x="546" y="731" fill="#ff6b6b" font-size="9" font-weight="700">Zabbix</text>
+<rect x="546" y="737" width="195" height="6" rx="3" fill="#0a1a26"/>
+<rect class="sf9" x="546" y="737" height="6" rx="3" fill="#ff6b6b" width="0"/>
+<text x="746" y="744" fill="#ff6b6b" font-size="8">85%</text>
+<rect x="20" y="763" width="248" height="38" rx="6" fill="#071525" stroke="#00F7FF18" stroke-width="1"/>
+<text x="30" y="777" fill="#ffd60a" font-size="9" font-weight="700">Mikrotik</text>
+<rect x="30" y="783" width="195" height="6" rx="3" fill="#0a1a26"/>
+<rect class="sf10" x="30" y="783" height="6" rx="3" fill="#ffd60a" width="0"/>
+<text x="230" y="790" fill="#ffd60a" font-size="8">90%</text>
+<rect x="278" y="763" width="248" height="38" rx="6" fill="#071525" stroke="#00F7FF18" stroke-width="1"/>
+<text x="288" y="777" fill="#00ff88" font-size="9" font-weight="700">Proxmox/KVM</text>
+<rect x="288" y="783" width="195" height="6" rx="3" fill="#0a1a26"/>
+<rect class="sf11" x="288" y="783" height="6" rx="3" fill="#00ff88" width="0"/>
+<text x="488" y="790" fill="#00ff88" font-size="8">88%</text>
+<rect x="536" y="763" width="248" height="38" rx="6" fill="#071525" stroke="#00F7FF18" stroke-width="1"/>
+<text x="546" y="777" fill="#7b42bc" font-size="9" font-weight="700">Terraform</text>
+<rect x="546" y="783" width="195" height="6" rx="3" fill="#0a1a26"/>
+<rect class="sf12" x="546" y="783" height="6" rx="3" fill="#7b42bc" width="0"/>
+<text x="746" y="790" fill="#7b42bc" font-size="8">82%</text>
+<rect x="20" y="809" width="248" height="38" rx="6" fill="#071525" stroke="#00F7FF18" stroke-width="1"/>
+<text x="30" y="823" fill="#ee0000" font-size="9" font-weight="700">Ansible</text>
+<rect x="30" y="829" width="195" height="6" rx="3" fill="#0a1a26"/>
+<rect class="sf13" x="30" y="829" height="6" rx="3" fill="#ee0000" width="0"/>
+<text x="230" y="836" fill="#ee0000" font-size="8">85%</text>
+<rect x="278" y="809" width="248" height="38" rx="6" fill="#071525" stroke="#00F7FF18" stroke-width="1"/>
+<text x="288" y="823" fill="#3776AB" font-size="9" font-weight="700">Python/Aiogram</text>
+<rect x="288" y="829" width="195" height="6" rx="3" fill="#0a1a26"/>
+<rect class="sf14" x="288" y="829" height="6" rx="3" fill="#3776AB" width="0"/>
+<text x="488" y="836" fill="#3776AB" font-size="8">80%</text>
+<rect x="536" y="809" width="248" height="38" rx="6" fill="#071525" stroke="#00F7FF18" stroke-width="1"/>
+<text x="546" y="823" fill="#ff6b9d" font-size="9" font-weight="700">Firewall/VPN</text>
+<rect x="546" y="829" width="195" height="6" rx="3" fill="#0a1a26"/>
+<rect class="sf15" x="546" y="829" height="6" rx="3" fill="#ff6b9d" width="0"/>
+<text x="746" y="836" fill="#ff6b9d" font-size="8">87%</text>
+<line x1="20" y1="865" x2="780" y2="865" stroke="#00F7FF" stroke-width=".5" opacity=".15"/>
+<text x="20" y="883" fill="#00F7FF" font-size="9" font-weight="700" letter-spacing="3">FULL TECH STACK</text>
+<line x1="121" y1="880" x2="775" y2="880" stroke="#00F7FF18" stroke-width=".8"/>
 
-<!-- ═══════════════════════════════════════════════
-     DEVOPS PIPELINE
-════════════════════════════════════════════════ -->
-<text x="20" y="288" fill="#00FF41" font-size="9" font-weight="700" letter-spacing="3">DEVOPS ARCHITECTURE</text>
-<line x1="200" y1="285" x2="770" y2="285" stroke="#00FF4120" stroke-width=".8"/>
-<circle cx="766" cy="281" r="4" fill="#00FF41" class="live"/>
-<text x="758" y="285" text-anchor="end" fill="#00FF41" font-size="8">LIVE</text>
+<text x="20" y="893" fill="#6ba3ff99" font-size="8" font-weight="700" letter-spacing="2">Infrastructure</text>
+<rect x="20" y="907" width="50" height="16" rx="4" fill="#071525" stroke="#6ba3ff44" stroke-width="1"/>
+<text x="45" y="918" text-anchor="middle" fill="#6ba3ff" font-size="8">Linux</text>
+<rect x="76" y="907" width="50" height="16" rx="4" fill="#071525" stroke="#6ba3ff44" stroke-width="1"/>
+<text x="101" y="918" text-anchor="middle" fill="#6ba3ff" font-size="8">Nginx</text>
+<rect x="132" y="907" width="56" height="16" rx="4" fill="#071525" stroke="#6ba3ff44" stroke-width="1"/>
+<text x="160" y="918" text-anchor="middle" fill="#6ba3ff" font-size="8">Apache</text>
+<rect x="194" y="907" width="80" height="16" rx="4" fill="#071525" stroke="#6ba3ff44" stroke-width="1"/>
+<text x="234" y="918" text-anchor="middle" fill="#6ba3ff" font-size="8">PostgreSQL</text>
+<rect x="280" y="907" width="50" height="16" rx="4" fill="#071525" stroke="#6ba3ff44" stroke-width="1"/>
+<text x="305" y="918" text-anchor="middle" fill="#6ba3ff" font-size="8">MySQL</text>
+<rect x="336" y="907" width="80" height="16" rx="4" fill="#071525" stroke="#6ba3ff44" stroke-width="1"/>
+<text x="376" y="918" text-anchor="middle" fill="#6ba3ff" font-size="8">Proxmox VE</text>
+<rect x="422" y="907" width="68" height="16" rx="4" fill="#071525" stroke="#6ba3ff44" stroke-width="1"/>
+<text x="456" y="918" text-anchor="middle" fill="#6ba3ff" font-size="8">KVM/QEMU</text>
+<rect x="496" y="907" width="104" height="16" rx="4" fill="#071525" stroke="#6ba3ff44" stroke-width="1"/>
+<text x="548" y="918" text-anchor="middle" fill="#6ba3ff" font-size="8">Windows Server</text>
+<text x="20" y="931" fill="#bf5af299" font-size="8" font-weight="700" letter-spacing="2">CI/CD &amp; Deploy</text>
+<rect x="20" y="945" width="104" height="16" rx="4" fill="#071525" stroke="#bf5af244" stroke-width="1"/>
+<text x="72" y="956" text-anchor="middle" fill="#bf5af2" font-size="8">GitHub Actions</text>
+<rect x="130" y="945" width="62" height="16" rx="4" fill="#071525" stroke="#bf5af244" stroke-width="1"/>
+<text x="161" y="956" text-anchor="middle" fill="#bf5af2" font-size="8">Jenkins</text>
+<rect x="198" y="945" width="56" height="16" rx="4" fill="#071525" stroke="#bf5af244" stroke-width="1"/>
+<text x="226" y="956" text-anchor="middle" fill="#bf5af2" font-size="8">Docker</text>
+<rect x="260" y="945" width="104" height="16" rx="4" fill="#071525" stroke="#bf5af244" stroke-width="1"/>
+<text x="312" y="956" text-anchor="middle" fill="#bf5af2" font-size="8">Docker Compose</text>
+<rect x="370" y="945" width="80" height="16" rx="4" fill="#071525" stroke="#bf5af244" stroke-width="1"/>
+<text x="410" y="956" text-anchor="middle" fill="#bf5af2" font-size="8">Blue-Green</text>
+<rect x="456" y="945" width="56" height="16" rx="4" fill="#071525" stroke="#bf5af244" stroke-width="1"/>
+<text x="484" y="956" text-anchor="middle" fill="#bf5af2" font-size="8">Canary</text>
+<rect x="518" y="945" width="68" height="16" rx="4" fill="#071525" stroke="#bf5af244" stroke-width="1"/>
+<text x="552" y="956" text-anchor="middle" fill="#bf5af2" font-size="8">Rollback</text>
+<rect x="592" y="945" width="80" height="16" rx="4" fill="#071525" stroke="#bf5af244" stroke-width="1"/>
+<text x="632" y="956" text-anchor="middle" fill="#bf5af2" font-size="8">A/B Deploy</text>
+<text x="20" y="969" fill="#f4680099" font-size="8" font-weight="700" letter-spacing="2">Monitoring</text>
+<rect x="20" y="983" width="62" height="16" rx="4" fill="#071525" stroke="#f4680044" stroke-width="1"/>
+<text x="51" y="994" text-anchor="middle" fill="#f46800" font-size="8">Grafana</text>
+<rect x="88" y="983" width="80" height="16" rx="4" fill="#071525" stroke="#f4680044" stroke-width="1"/>
+<text x="128" y="994" text-anchor="middle" fill="#f46800" font-size="8">Prometheus</text>
+<rect x="174" y="983" width="56" height="16" rx="4" fill="#071525" stroke="#f4680044" stroke-width="1"/>
+<text x="202" y="994" text-anchor="middle" fill="#f46800" font-size="8">Zabbix</text>
+<rect x="236" y="983" width="62" height="16" rx="4" fill="#071525" stroke="#f4680044" stroke-width="1"/>
+<text x="267" y="994" text-anchor="middle" fill="#f46800" font-size="8">Netdata</text>
+<rect x="304" y="983" width="74" height="16" rx="4" fill="#071525" stroke="#f4680044" stroke-width="1"/>
+<text x="341" y="994" text-anchor="middle" fill="#f46800" font-size="8">ELK Stack</text>
+<rect x="384" y="983" width="80" height="16" rx="4" fill="#071525" stroke="#f4680044" stroke-width="1"/>
+<text x="424" y="994" text-anchor="middle" fill="#f46800" font-size="8">Wazuh SIEM</text>
+<rect x="470" y="983" width="38" height="16" rx="4" fill="#071525" stroke="#f4680044" stroke-width="1"/>
+<text x="489" y="994" text-anchor="middle" fill="#f46800" font-size="8">DLP</text>
+<text x="20" y="1007" fill="#ffd60a99" font-size="8" font-weight="700" letter-spacing="2">IaC &amp; Orchestration</text>
+<rect x="20" y="1021" width="62" height="16" rx="4" fill="#071525" stroke="#ffd60a44" stroke-width="1"/>
+<text x="51" y="1032" text-anchor="middle" fill="#ffd60a" font-size="8">Ansible</text>
+<rect x="88" y="1021" width="74" height="16" rx="4" fill="#071525" stroke="#ffd60a44" stroke-width="1"/>
+<text x="125" y="1032" text-anchor="middle" fill="#ffd60a" font-size="8">Terraform</text>
+<rect x="168" y="1021" width="80" height="16" rx="4" fill="#071525" stroke="#ffd60a44" stroke-width="1"/>
+<text x="208" y="1032" text-anchor="middle" fill="#ffd60a" font-size="8">Kubernetes</text>
+<rect x="254" y="1021" width="62" height="16" rx="4" fill="#071525" stroke="#ffd60a44" stroke-width="1"/>
+<text x="285" y="1032" text-anchor="middle" fill="#ffd60a" font-size="8">Vagrant</text>
+<rect x="322" y="1021" width="56" height="16" rx="4" fill="#071525" stroke="#ffd60a44" stroke-width="1"/>
+<text x="350" y="1032" text-anchor="middle" fill="#ffd60a" font-size="8">Consul</text>
+<text x="20" y="1045" fill="#00ff8899" font-size="8" font-weight="700" letter-spacing="2">Development</text>
+<rect x="20" y="1059" width="56" height="16" rx="4" fill="#071525" stroke="#00ff8844" stroke-width="1"/>
+<text x="48" y="1070" text-anchor="middle" fill="#00ff88" font-size="8">Python</text>
+<rect x="82" y="1059" width="62" height="16" rx="4" fill="#071525" stroke="#00ff8844" stroke-width="1"/>
+<text x="113" y="1070" text-anchor="middle" fill="#00ff88" font-size="8">Aiogram</text>
+<rect x="150" y="1059" width="62" height="16" rx="4" fill="#071525" stroke="#00ff8844" stroke-width="1"/>
+<text x="181" y="1070" text-anchor="middle" fill="#00ff88" font-size="8">Telebot</text>
+<rect x="218" y="1059" width="68" height="16" rx="4" fill="#071525" stroke="#00ff8844" stroke-width="1"/>
+<text x="252" y="1070" text-anchor="middle" fill="#00ff88" font-size="8">HTML/CSS</text>
+<rect x="292" y="1059" width="80" height="16" rx="4" fill="#071525" stroke="#00ff8844" stroke-width="1"/>
+<text x="332" y="1070" text-anchor="middle" fill="#00ff88" font-size="8">JavaScript</text>
+<rect x="378" y="1059" width="80" height="16" rx="4" fill="#071525" stroke="#00ff8844" stroke-width="1"/>
+<text x="418" y="1070" text-anchor="middle" fill="#00ff88" font-size="8">Git/GitHub</text>
+<text x="20" y="1083" fill="#ff6b9d99" font-size="8" font-weight="700" letter-spacing="2">Network &amp; Security</text>
+<rect x="20" y="1097" width="122" height="16" rx="4" fill="#071525" stroke="#ff6b9d44" stroke-width="1"/>
+<text x="81" y="1108" text-anchor="middle" fill="#ff6b9d" font-size="8">Mikrotik RouterOS</text>
+<rect x="148" y="1097" width="68" height="16" rx="4" fill="#071525" stroke="#ff6b9d44" stroke-width="1"/>
+<text x="182" y="1108" text-anchor="middle" fill="#ff6b9d" font-size="8">iptables</text>
+<rect x="222" y="1097" width="98" height="16" rx="4" fill="#071525" stroke="#ff6b9d44" stroke-width="1"/>
+<text x="271" y="1108" text-anchor="middle" fill="#ff6b9d" font-size="8">Kerio Control</text>
+<rect x="326" y="1097" width="38" height="16" rx="4" fill="#071525" stroke="#ff6b9d44" stroke-width="1"/>
+<text x="345" y="1108" text-anchor="middle" fill="#ff6b9d" font-size="8">VPN</text>
+<rect x="370" y="1097" width="44" height="16" rx="4" fill="#071525" stroke="#ff6b9d44" stroke-width="1"/>
+<text x="392" y="1108" text-anchor="middle" fill="#ff6b9d" font-size="8">VLAN</text>
+<rect x="420" y="1097" width="38" height="16" rx="4" fill="#071525" stroke="#ff6b9d44" stroke-width="1"/>
+<text x="439" y="1108" text-anchor="middle" fill="#ff6b9d" font-size="8">DNS</text>
+<rect x="464" y="1097" width="44" height="16" rx="4" fill="#071525" stroke="#ff6b9d44" stroke-width="1"/>
+<text x="486" y="1108" text-anchor="middle" fill="#ff6b9d" font-size="8">DHCP</text>
+<rect x="514" y="1097" width="56" height="16" rx="4" fill="#071525" stroke="#ff6b9d44" stroke-width="1"/>
+<text x="542" y="1108" text-anchor="middle" fill="#ff6b9d" font-size="8">TCP/IP</text>
+<line x1="20" y1="1121" x2="780" y2="1121" stroke="#00F7FF" stroke-width=".5" opacity=".15"/>
+<text x="20" y="1139" fill="#00F7FF" font-size="9" font-weight="700" letter-spacing="3">STATS</text>
+<line x1="51" y1="1136" x2="775" y2="1136" stroke="#00F7FF18" stroke-width=".8"/>
 
-<!-- Edges DevOps -->
-<line class="edge"  x1="76"  y1="309" x2="144" y2="309" stroke="#00F7FF" stroke-width="1.3" marker-end="url(#ac)"/>
-<line class="edge"  x1="228" y1="300" x2="294" y2="285" stroke="#bf5af2" stroke-width="1.3" marker-end="url(#ap)"/>
-<line class="edge2" x1="228" y1="318" x2="294" y2="333" stroke="#ff4444" stroke-width="1.3" marker-end="url(#ar)"/>
-<line class="edge"  x1="398" y1="285" x2="464" y2="285" stroke="#2496ed" stroke-width="1.3" marker-end="url(#ab)"/>
-<line class="edge2" x1="398" y1="333" x2="464" y2="333" stroke="#326ce5" stroke-width="1.3" marker-end="url(#ab)"/>
-<line class="edge"  x1="568" y1="292" x2="626" y2="301" stroke="#f46800" stroke-width="1.3" marker-end="url(#ao)"/>
-<line class="edge2" x1="568" y1="326" x2="626" y2="317" stroke="#f46800" stroke-width="1.3" marker-end="url(#ao)"/>
-<!-- Ansible -> Monitor -->
-<line class="edge"  x1="720" y1="292" x2="752" y2="300" stroke="#00ff88" stroke-width="1.2" marker-end="url(#ag)"/>
-<!-- Terraform -> Monitor -->
-<line class="edge2" x1="720" y1="318" x2="752" y2="310" stroke="#ffd60a" stroke-width="1.2" marker-end="url(#ay)"/>
+<rect x="20" y="1145" width="182" height="52" rx="8" fill="#071525" stroke="#00F7FF44" stroke-width="1"/>
+<text class="st-num" x="111" y="1175" text-anchor="middle" fill="#00F7FF" font-size="22" font-weight="700">2</text>
+<text x="111" y="1191" text-anchor="middle" fill="#00F7FF99" font-size="8" letter-spacing="2">YEARS EXP</text>
+<rect x="212" y="1145" width="182" height="52" rx="8" fill="#071525" stroke="#00ff8844" stroke-width="1"/>
+<text class="st-num" x="303" y="1175" text-anchor="middle" fill="#00ff88" font-size="22" font-weight="700">99%</text>
+<text x="303" y="1191" text-anchor="middle" fill="#00ff8899" font-size="8" letter-spacing="2">UPTIME</text>
+<rect x="404" y="1145" width="182" height="52" rx="8" fill="#071525" stroke="#00ff8844" stroke-width="1"/>
+<text class="st-num" x="495" y="1175" text-anchor="middle" fill="#00ff88" font-size="22" font-weight="700">0ms</text>
+<text x="495" y="1191" text-anchor="middle" fill="#00ff8899" font-size="8" letter-spacing="2">DOWNTIME</text>
+<rect x="596" y="1145" width="182" height="52" rx="8" fill="#071525" stroke="#bf5af244" stroke-width="1"/>
+<text class="st-num" x="687" y="1175" text-anchor="middle" fill="#bf5af2" font-size="22" font-weight="700">47</text>
+<text x="687" y="1191" text-anchor="middle" fill="#bf5af299" font-size="8" letter-spacing="2">REPOS</text>
+<line x1="20" y1="1209" x2="780" y2="1209" stroke="#00F7FF" stroke-width=".5" opacity=".15"/>
+<text x="20" y="1227" fill="#00F7FF" font-size="9" font-weight="700" letter-spacing="3">CONTACT</text>
+<line x1="65" y1="1224" x2="775" y2="1224" stroke="#00F7FF18" stroke-width=".8"/>
 
-<!-- DATA PACKETS DevOps -->
-<circle class="pk1" r="3.5" fill="#00F7FF"/><circle class="pk2" r="3.5" fill="#bf5af2"/>
-<circle class="pk3" r="3.5" fill="#ff4444"/><circle class="pk4" r="3.5" fill="#2496ed"/>
-<circle class="pk5" r="3.5" fill="#326ce5"/><circle class="pk6" r="3.5" fill="#f46800"/>
-<circle class="pk7" r="3.5" fill="#f46800"/>
+<rect x="20" y="1233" width="760" height="120" rx="8" fill="#071525" stroke="#00F7FF18" stroke-width="1"/>
+<rect x="32" y="1245" width="24" height="20" rx="5" fill="#0a1520" stroke="#00F7FF44" stroke-width="1"/>
+<text x="44" y="1259" text-anchor="middle" fill="#00F7FF" font-size="9" font-weight="700">@</text>
+<text x="64" y="1253" fill="#3a6a8a" font-size="8" letter-spacing="1">EMAIL</text>
+<text x="64" y="1264" fill="#00F7FF" font-size="10">shahzodqalandarov414@gmail.com</text>
+<line x1="32" y1="1269" x2="772" y2="1269" stroke="#00F7FF18" stroke-width=".5"/>
+<rect x="32" y="1273" width="24" height="20" rx="5" fill="#0a1520" stroke="#00bcd444" stroke-width="1"/>
+<text x="44" y="1287" text-anchor="middle" fill="#00bcd4" font-size="9" font-weight="700">T</text>
+<text x="64" y="1281" fill="#3a6a8a" font-size="8" letter-spacing="1">PHONE / TELEGRAM</text>
+<text x="64" y="1292" fill="#00bcd4" font-size="10">+998 (94) 090-02-27</text>
+<line x1="32" y1="1297" x2="772" y2="1297" stroke="#00F7FF18" stroke-width=".5"/>
+<rect x="32" y="1301" width="24" height="20" rx="5" fill="#0a1520" stroke="#bf5af244" stroke-width="1"/>
+<text x="44" y="1315" text-anchor="middle" fill="#bf5af2" font-size="9" font-weight="700">G</text>
+<text x="64" y="1309" fill="#3a6a8a" font-size="8" letter-spacing="1">GITHUB</text>
+<text x="64" y="1320" fill="#bf5af2" font-size="10">github.com/Salom0227</text>
+<line x1="32" y1="1325" x2="772" y2="1325" stroke="#00F7FF18" stroke-width=".5"/>
+<rect x="32" y="1329" width="24" height="20" rx="5" fill="#0a1520" stroke="#00ff8844" stroke-width="1"/>
+<text x="44" y="1343" text-anchor="middle" fill="#00ff88" font-size="9" font-weight="700">UZ</text>
+<text x="64" y="1337" fill="#3a6a8a" font-size="8" letter-spacing="1">LANGUAGES</text>
+<text x="64" y="1348" fill="#00ff88" font-size="10">Uzbek (Native)  ·  English (B1)  ·  Russian (Elementary)</text>
+<line x1="20" y1="1361" x2="780" y2="1361" stroke="#00F7FF" stroke-width=".5" opacity=".15"/>
+<text x="20" y="1379" fill="#00F7FF" font-size="9" font-weight="700" letter-spacing="3">PHILOSOPHY</text>
+<line x1="86" y1="1376" x2="775" y2="1376" stroke="#00F7FF18" stroke-width=".8"/>
 
-<!-- NODES DevOps -->
-<!-- Dev -->
-<g class="nd-c"><rect x="30" y="294" width="46" height="30" rx="5" fill="#020c02" stroke="#00F7FF" stroke-width="1.5"/>
-<text x="53" y="307" text-anchor="middle" fill="#00F7FF" font-size="8" font-weight="700">Dev</text>
-<text x="53" y="318" text-anchor="middle" fill="#00bcd4" font-size="7">push</text></g>
-<!-- GitHub -->
-<g class="nd-p"><rect x="144" y="294" width="84" height="30" rx="5" fill="#0d0020" stroke="#bf5af2" stroke-width="1.5"/>
-<text x="186" y="307" text-anchor="middle" fill="#bf5af2" font-size="8" font-weight="700">GitHub</text>
-<text x="186" y="318" text-anchor="middle" fill="#9333ea" font-size="7">repository</text></g>
-<!-- GH Actions -->
-<g class="nd-p"><rect x="294" y="271" width="104" height="28" rx="5" fill="#0d0020" stroke="#a855f7" stroke-width="1.5"/>
-<text x="346" y="283" text-anchor="middle" fill="#a855f7" font-size="8" font-weight="700">GH Actions</text>
-<text x="346" y="293" text-anchor="middle" fill="#7c3aed" font-size="7">CI pipeline</text></g>
-<!-- Jenkins -->
-<g class="nd-r"><rect x="294" y="319" width="104" height="28" rx="5" fill="#1a0000" stroke="#ff4444" stroke-width="1.5"/>
-<text x="346" y="331" text-anchor="middle" fill="#ff4444" font-size="8" font-weight="700">Jenkins</text>
-<text x="346" y="341" text-anchor="middle" fill="#cc3333" font-size="7">CD pipeline</text></g>
-<!-- Docker -->
-<g class="nd-b"><rect x="464" y="271" width="104" height="28" rx="5" fill="#001020" stroke="#2496ed" stroke-width="1.5"/>
-<text x="516" y="283" text-anchor="middle" fill="#38bdf8" font-size="8" font-weight="700">Docker</text>
-<text x="516" y="293" text-anchor="middle" fill="#2496ed" font-size="7">containers</text></g>
-<!-- K8s -->
-<g class="nd-b"><rect x="464" y="319" width="104" height="28" rx="5" fill="#001020" stroke="#326ce5" stroke-width="1.5"/>
-<text x="516" y="331" text-anchor="middle" fill="#6ba3ff" font-size="8" font-weight="700">Kubernetes</text>
-<text x="516" y="341" text-anchor="middle" fill="#2496ed" font-size="7">orchestrate</text></g>
-<!-- Ansible -->
-<g class="nd-o"><rect x="626" y="271" width="94" height="28" rx="5" fill="#180800" stroke="#f46800" stroke-width="1.5"/>
-<text x="673" y="283" text-anchor="middle" fill="#fb923c" font-size="8" font-weight="700">Ansible</text>
-<text x="673" y="293" text-anchor="middle" fill="#f46800" font-size="7">provision</text></g>
-<!-- Terraform -->
-<g class="nd-y"><rect x="626" y="305" width="94" height="28" rx="5" fill="#150e00" stroke="#ffd60a" stroke-width="1.5"/>
-<text x="673" y="317" text-anchor="middle" fill="#ffd60a" font-size="8" font-weight="700">Terraform</text>
-<text x="673" y="327" text-anchor="middle" fill="#b39800" font-size="7">infra as code</text></g>
-<!-- Monitor -->
-<g class="nd-g"><rect x="752" y="282" width="38" height="52" rx="5" fill="#001a08" stroke="#00ff88" stroke-width="1.5"/>
-<text x="771" y="297" text-anchor="middle" fill="#00ff88" font-size="7" font-weight="700">Mon</text>
-<text x="771" y="309" text-anchor="middle" fill="#00cc70" font-size="6">Graf</text>
-<text x="771" y="320" text-anchor="middle" fill="#00cc70" font-size="6">Prom</text>
-<text x="771" y="331" text-anchor="middle" fill="#00cc70" font-size="6">Zab</text></g>
-
-<!-- Zero-downtime label -->
-<rect x="100" y="356" width="490" height="16" rx="5" fill="#010d03" stroke="#00FF4120"/>
-<text x="345" y="368" text-anchor="middle" fill="#00FF4155" font-size="8" letter-spacing="2">Zero-Downtime · Blue-Green · Canary · Rollback · IaC</text>
-
-<!-- ═══ DIVIDER 2 ═══ -->
-<line x1="20" y1="382" x2="780" y2="382" stroke="#00FF41" stroke-width=".5" opacity=".2"/>
-
-<!-- ═══════════════════════════════════════════════
-     SYSADMIN PIPELINE
-════════════════════════════════════════════════ -->
-<text x="20" y="400" fill="#00FF41" font-size="9" font-weight="700" letter-spacing="3">SYSTEM ADMIN INFRASTRUCTURE</text>
-<line x1="270" y1="397" x2="770" y2="397" stroke="#00FF4120" stroke-width=".8"/>
-<circle cx="766" cy="393" r="4" fill="#00ff88" class="live" style="animation-delay:.7s"/>
-
-<!-- SysAdmin Edges -->
-<line class="edge"  x1="50"  y1="504" x2="118" y2="504" stroke="#00F7FF" stroke-width="1.3" marker-end="url(#ac)"/>
-<line class="edge"  x1="200" y1="495" x2="270" y2="482" stroke="#ffd60a" stroke-width="1.3" marker-end="url(#ay)"/>
-<line class="edge2" x1="200" y1="513" x2="270" y2="526" stroke="#00ff88" stroke-width="1.3" marker-end="url(#ag)"/>
-<line class="edge"  x1="374" y1="482" x2="444" y2="495" stroke="#f46800" stroke-width="1.3" marker-end="url(#ao)"/>
-<line class="edge2" x1="374" y1="526" x2="444" y2="513" stroke="#bf5af2" stroke-width="1.3" marker-end="url(#ap)"/>
-<line class="edge"  x1="540" y1="504" x2="610" y2="504" stroke="#ff4444" stroke-width="1.3" marker-end="url(#ar)"/>
-<line class="edge2" x1="700" y1="495" x2="758" y2="495" stroke="#2496ed" stroke-width="1.3" marker-end="url(#ab)"/>
-<line class="edge"  x1="700" y1="513" x2="758" y2="513" stroke="#00ff88" stroke-width="1.3" marker-end="url(#ag)"/>
-
-<!-- SysAdmin Packets -->
-<circle class="pk8"  r="3.5" fill="#00F7FF"/>
-<circle class="pk9"  r="3.5" fill="#ffd60a"/>
-<circle class="pk10" r="3.5" fill="#00ff88"/>
-<circle class="pk11" r="3.5" fill="#f46800"/>
-<circle class="pk12" r="3.5" fill="#bf5af2"/>
-
-<!-- SYSADMIN NODES -->
-<!-- Server -->
-<g class="nd-c"><rect x="10" y="489" width="40" height="30" rx="5" fill="#020c02" stroke="#00F7FF" stroke-width="1.5"/>
-<text x="30" y="502" text-anchor="middle" fill="#00F7FF" font-size="7" font-weight="700">Server</text>
-<text x="30" y="513" text-anchor="middle" fill="#00bcd4" font-size="6">Linux</text></g>
-<!-- Mikrotik -->
-<g class="nd-y"><rect x="118" y="475" width="82" height="58" rx="5" fill="#150e00" stroke="#ffd60a" stroke-width="1.5"/>
-<text x="159" y="490" text-anchor="middle" fill="#ffd60a" font-size="8" font-weight="700">Mikrotik</text>
-<text x="159" y="502" text-anchor="middle" fill="#b39800" font-size="7">RouterOS</text>
-<text x="159" y="513" text-anchor="middle" fill="#b39800" font-size="7">VLAN·VPN</text>
-<text x="159" y="524" text-anchor="middle" fill="#b39800" font-size="7">Firewall</text></g>
-<!-- Proxmox/KVM -->
-<g class="nd-g"><rect x="270" y="468" width="104" height="28" rx="5" fill="#001a08" stroke="#00ff88" stroke-width="1.5"/>
-<text x="322" y="480" text-anchor="middle" fill="#00ff88" font-size="8" font-weight="700">Proxmox VE</text>
-<text x="322" y="490" text-anchor="middle" fill="#00cc70" font-size="7">KVM/QEMU virt</text></g>
-<!-- Kerio/iptables -->
-<g class="nd-o"><rect x="270" y="512" width="104" height="28" rx="5" fill="#180800" stroke="#f46800" stroke-width="1.5"/>
-<text x="322" y="524" text-anchor="middle" fill="#fb923c" font-size="8" font-weight="700">Kerio Control</text>
-<text x="322" y="534" text-anchor="middle" fill="#f46800" font-size="7">iptables · DLP</text></g>
-<!-- SIEM/Security -->
-<g class="nd-p"><rect x="444" y="468" width="96" height="28" rx="5" fill="#0d0020" stroke="#bf5af2" stroke-width="1.5"/>
-<text x="492" y="480" text-anchor="middle" fill="#bf5af2" font-size="8" font-weight="700">Wazuh SIEM</text>
-<text x="492" y="490" text-anchor="middle" fill="#9333ea" font-size="7">security events</text></g>
-<!-- Windows Server -->
-<g class="nd-b"><rect x="444" y="512" width="96" height="28" rx="5" fill="#001020" stroke="#2496ed" stroke-width="1.5"/>
-<text x="492" y="524" text-anchor="middle" fill="#38bdf8" font-size="8" font-weight="700">Win Server</text>
-<text x="492" y="534" text-anchor="middle" fill="#2496ed" font-size="7">AD · DNS · DHCP</text></g>
-<!-- Monitoring -->
-<g class="nd-r"><rect x="610" y="475" width="90" height="58" rx="5" fill="#1a0000" stroke="#ff4444" stroke-width="1.5"/>
-<text x="655" y="490" text-anchor="middle" fill="#ff6b6b" font-size="8" font-weight="700">Monitor</text>
-<text x="655" y="502" text-anchor="middle" fill="#cc4444" font-size="7">Grafana</text>
-<text x="655" y="513" text-anchor="middle" fill="#cc4444" font-size="7">Zabbix</text>
-<text x="655" y="524" text-anchor="middle" fill="#cc4444" font-size="7">Netdata</text></g>
-<!-- Alerts/Logs -->
-<g class="nd-b"><rect x="758" y="482" width="32" height="14" rx="4" fill="#001020" stroke="#2496ed" stroke-width="1"/>
-<text x="774" y="493" text-anchor="middle" fill="#38bdf8" font-size="7">Alert</text></g>
-<g class="nd-g"><rect x="758" y="500" width="32" height="14" rx="4" fill="#001a08" stroke="#00ff88" stroke-width="1"/>
-<text x="774" y="511" text-anchor="middle" fill="#00ff88" font-size="7">Logs</text></g>
-
-<!-- ═══ DIVIDER 3 ═══ -->
-<line x1="20" y1="550" x2="780" y2="550" stroke="#00FF41" stroke-width=".5" opacity=".2"/>
-
-<!-- ═══ SKILL BARS ═══ -->
-<text x="20" y="568" fill="#00FF41" font-size="9" font-weight="700" letter-spacing="3">SKILL LEVELS</text>
-
-<!-- Skills row 1 -->
-<text x="20"  y="583" fill="#c9ffdd" font-size="8">Linux</text>
-<rect x="70"  y="576" width="100" height="6" rx="3" fill="#001a05"/>
-<rect class="sb1" x="70" y="576" height="6" rx="3" fill="#00FF41"/>
-<text x="174" y="583" fill="#00FF41" font-size="8">98%</text>
-
-<text x="190" y="583" fill="#c9ffdd" font-size="8">Docker/K8s</text>
-<rect x="248" y="576" width="100" height="6" rx="3" fill="#001a05"/>
-<rect class="sb2" x="248" y="576" height="6" rx="3" fill="#2496ed"/>
-<text x="352" y="583" fill="#2496ed" font-size="8">95%</text>
-
-<text x="368" y="583" fill="#c9ffdd" font-size="8">CI/CD</text>
-<rect x="400" y="576" width="100" height="6" rx="3" fill="#001a05"/>
-<rect class="sb3" x="400" y="576" height="6" rx="3" fill="#bf5af2"/>
-<text x="504" y="583" fill="#bf5af2" font-size="8">92%</text>
-
-<text x="520" y="583" fill="#c9ffdd" font-size="8">Mikrotik</text>
-<rect x="563" y="576" width="100" height="6" rx="3" fill="#001a05"/>
-<rect class="sb4" x="563" y="576" height="6" rx="3" fill="#ffd60a"/>
-<text x="667" y="583" fill="#ffd60a" font-size="8">90%</text>
-
-<!-- Skills row 2 -->
-<text x="20"  y="598" fill="#c9ffdd" font-size="8">Grafana</text>
-<rect x="70"  y="591" width="100" height="6" rx="3" fill="#001a05"/>
-<rect class="sb5" x="70" y="591" height="6" rx="3" fill="#f46800"/>
-<text x="174" y="598" fill="#f46800" font-size="8">88%</text>
-
-<text x="190" y="598" fill="#c9ffdd" font-size="8">Ansible/TF</text>
-<rect x="248" y="591" width="100" height="6" rx="3" fill="#001a05"/>
-<rect class="sb6" x="248" y="591" height="6" rx="3" fill="#ff4444"/>
-<text x="352" y="598" fill="#ff4444" font-size="8">85%</text>
-
-<text x="368" y="598" fill="#c9ffdd" font-size="8">Proxmox</text>
-<rect x="410" y="591" width="90" height="6" rx="3" fill="#001a05"/>
-<rect x="410" y="591" height="6" rx="3" fill="#00ff88" width="0"><animate attributeName="width" from="0" to="79" dur="1.8s" begin="1.4s" fill="freeze"/></rect>
-<text x="504" y="598" fill="#00ff88" font-size="8">88%</text>
-
-<text x="520" y="598" fill="#c9ffdd" font-size="8">Python</text>
-<rect x="563" y="591" width="90" height="6" rx="3" fill="#001a05"/>
-<rect x="563" y="591" height="6" rx="3" fill="#3776AB" width="0"><animate attributeName="width" from="0" to="72" dur="1.8s" begin="1.6s" fill="freeze"/></rect>
-<text x="657" y="598" fill="#3776AB" font-size="8">80%</text>
-
-<!-- ═══ EDUCATION + FOOTER ═══ -->
-<line x1="20" y1="607" x2="780" y2="607" stroke="#00FF41" stroke-width=".5" opacity=".15"/>
-<text x="24" y="618" fill="#00FF41" font-size="8">🎓</text>
-<text x="38" y="618" fill="#c9ffdd" font-size="8" font-weight="700">National University of Uzbekistan</text>
-<text x="38" y="0" fill="#1a6a2a" font-size="7" dy="618">·</text>
-<text x="240" y="618" fill="#1a6a2a" font-size="7">Jizzakh Branch · Bachelor: Information Security · 2021–2025</text>
-<rect x="570" y="610" width="120" height="14" rx="4" fill="#001a05" stroke="#00FF4144"/>
-<text x="630" y="621" text-anchor="middle" fill="#00FF41" font-size="7">GRADUATED 2025</text>
-
+<rect x="20" y="1385" width="4" height="44" rx="2" fill="#00F7FF" opacity=".6"/>
+<text x="36" y="1401" fill="#7ab8d4" font-size="10" font-style="italic">Automate everything. Deploy without fear. Monitor everything.</text>
+<text x="36" y="1417" fill="#7ab8d4" font-size="10" font-style="italic">Zero downtime is not a goal — it is a standard.</text>
+<text x="36" y="1431" fill="#7ab8d4" font-size="10" font-style="italic">If it can break, pipeline it. If it scales, Kubernetes it.</text>
+<line x1="20" y1="1445" x2="780" y2="1445" stroke="#00F7FF" stroke-width=".5" opacity=".15"/>
+<rect x="20" y="1453" width="760" height="38" rx="8" fill="#071525" stroke="#00FF4133" stroke-width="1"/>
+<text x="40" y="1469" fill="#c9ffdd" font-size="9" font-weight="700">National University of Uzbekistan  ·  Jizzakh Branch</text>
+<text x="40" y="1483" fill="#1a6a2a" font-size="8">Bachelor: Information Security  ·  2021–2025</text>
+<rect x="540" y="1459" width="130" height="18" rx="5" fill="#001a05" stroke="#00FF4144"/>
+<text x="605" y="1472" text-anchor="middle" fill="#00FF41" font-size="9" font-weight="700">GRADUATED 2025</text>
+<line x1="20" y1="1499" x2="780" y2="1499" stroke="#00F7FF" stroke-width=".5" opacity=".15"/>
+<text x="400" y="1519" text-anchor="middle" fill="#1a4a6a" font-size="8" letter-spacing="3">SHOXZOD QALANDAROV  ·  DEVOPS ENGINEER  ·  TASHKENT, UZ</text>
 </svg>
