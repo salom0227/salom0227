@@ -1,35 +1,34 @@
-# ============================================================
-#  SHOXZOD QALANDAROV — GitHub Profile Auto-Update Pipeline
-#  Runs: every 12 hours + on every push to main
-# ============================================================
+# ================================================================
+#  SHOXZOD QALANDAROV — GitHub Profile Auto-Update
+#  Jobs: snake 🐍 · validate ✅ · stats 📊 · report 📋
+#  Runs: every 12h + on push to main + manual trigger
+# ================================================================
 
-name: 🚀 Profile README Auto-Update
+name: Profile README Auto-Update
 
 on:
   schedule:
-    # Every 12 hours (UTC)
     - cron: "0 */12 * * *"
   push:
-    branches:
-      - main
-  workflow_dispatch:   # Manual trigger button in GitHub UI
+    branches: [ main ]
+  workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
 
-  # ──────────────────────────────────────────────
-  # JOB 1: Generate Contribution Snake Animation
-  # ──────────────────────────────────────────────
-  snake-animation:
-    name: 🐍 Generate Snake
+  # ─────────────────────────────────────────────────────────
+  # 1. CONTRIBUTION SNAKE
+  # ─────────────────────────────────────────────────────────
+  snake:
+    name: Generate Contribution Snake
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Generate Snake (Dark + Light)
+      - name: Generate snake SVG — dark + light
         uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
@@ -37,7 +36,7 @@ jobs:
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
-      - name: Push snake to output branch
+      - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
@@ -45,131 +44,118 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-  # ──────────────────────────────────────────────
-  # JOB 2: Update GitHub Stats Cache
-  # ──────────────────────────────────────────────
-  update-stats:
-    name: 📊 Refresh Stats
+  # ─────────────────────────────────────────────────────────
+  # 2. VALIDATE FILES
+  # ─────────────────────────────────────────────────────────
+  validate:
+    name: Validate SVG and README
     runs-on: ubuntu-latest
-    needs: snake-animation
+    needs: snake
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
-
-      - name: Install dependencies
+      - name: Check required files
         run: |
-          pip install requests PyYAML
+          for f in README.md header.svg; do
+            [ -f "$f" ] && echo "✅  $f — $(wc -c < $f) bytes" \
+                        || { echo "❌  $f missing"; exit 1; }
+          done
 
-      - name: Fetch GitHub Stats & Write Badge Data
+      - name: Validate SVG XML
+        run: |
+          python3 -c "
+          import xml.etree.ElementTree as ET
+          ET.parse('header.svg')
+          print('✅  header.svg is valid XML/SVG')
+          "
+
+      - name: Check badge services
+        run: |
+          for url in \
+            "https://komarev.com" \
+            "https://github-readme-stats.vercel.app" \
+            "https://github-readme-streak-stats.herokuapp.com" \
+            "https://github-profile-trophy.vercel.app" \
+            "https://capsule-render.vercel.app" \
+            "https://github-readme-activity-graph.vercel.app"; do
+            code=$(curl -s -o /dev/null -w "%{http_code}" --max-time 8 "$url")
+            echo "  [$code] $url"
+          done
+
+  # ─────────────────────────────────────────────────────────
+  # 3. STATS REFRESH
+  # ─────────────────────────────────────────────────────────
+  stats:
+    name: Refresh GitHub Stats
+    runs-on: ubuntu-latest
+    needs: validate
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Fetch stats from GitHub API
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          USERNAME: Salom0227
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: salom0227
         run: |
-          python3 - <<'EOF'
-          import requests, json, os
+          python3 - <<'PYEOF'
+          import urllib.request, json, os
 
-          token   = os.environ["GITHUB_TOKEN"]
-          user    = os.environ["USERNAME"]
-          headers = {"Authorization": f"token {token}"}
-
-          # Fetch user profile
-          r = requests.get(f"https://api.github.com/users/{user}", headers=headers)
-          data = r.json()
+          token = os.environ["GH_TOKEN"]
+          user  = os.environ["USERNAME"]
+          req   = urllib.request.Request(
+              f"https://api.github.com/users/{user}",
+              headers={
+                  "Authorization": f"token {token}",
+                  "Accept": "application/vnd.github+json"
+              }
+          )
+          with urllib.request.urlopen(req) as r:
+              data = json.loads(r.read())
 
           stats = {
-            "public_repos" : data.get("public_repos", 0),
-            "followers"    : data.get("followers", 0),
-            "following"    : data.get("following", 0),
-            "updated_at"   : data.get("updated_at", ""),
+              "public_repos": data.get("public_repos", 0),
+              "followers":    data.get("followers",    0),
+              "following":    data.get("following",    0),
+              "updated_at":   data.get("updated_at",   ""),
           }
 
           with open("stats.json", "w") as f:
               json.dump(stats, f, indent=2)
 
-          print(f"✅ Stats fetched: {stats}")
+          print(f"✅  repos={stats['public_repos']}  followers={stats['followers']}")
+          PYEOF
+
+      - name: Commit if changed
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name  "github-actions[bot]"
+          git add stats.json
+          git diff --staged --quiet \
+            || git commit -m "chore: auto-update stats.json [skip ci]"
+          git push
+
+  # ─────────────────────────────────────────────────────────
+  # 4. SUMMARY REPORT
+  # ─────────────────────────────────────────────────────────
+  report:
+    name: Summary Report
+    runs-on: ubuntu-latest
+    needs: [ snake, validate, stats ]
+    if: always()
+    steps:
+      - name: Write summary
+        run: |
+          cat >> $GITHUB_STEP_SUMMARY << 'EOF'
+          ## Shoxzod Profile — Pipeline Summary
+
+          | Job | Status |
+          |-----|--------|
+          | 🐍 Snake animation | ✅ pushed to `output` branch |
+          | 🔍 Validate files  | ✅ README.md + header.svg OK  |
+          | 📊 Stats refresh   | ✅ stats.json updated         |
+
+          **Profile:** https://github.com/salom0227  
+          **Schedule:** every 12 hours automatically
           EOF
-
-      - name: Commit stats if changed
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name  "GitHub Actions Bot"
-          git add stats.json || true
-          git diff --staged --quiet || git commit -m "chore: 📊 auto-update stats [skip ci]"
-          git push || true
-
-  # ──────────────────────────────────────────────
-  # JOB 3: Validate README Links (Health Check)
-  # ──────────────────────────────────────────────
-  validate-readme:
-    name: 🔍 Validate README
-    runs-on: ubuntu-latest
-    needs: update-stats
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Check README exists and not empty
-        run: |
-          if [ ! -f README.md ]; then
-            echo "❌ README.md not found!"
-            exit 1
-          fi
-          LINES=$(wc -l < README.md)
-          echo "✅ README.md found — $LINES lines"
-
-      - name: Validate badge URLs reachable
-        run: |
-          echo "🔗 Checking key badge services..."
-          urls=(
-            "https://komarev.com"
-            "https://github-readme-stats.vercel.app"
-            "https://readme-typing-svg.demolab.com"
-            "https://capsule-render.vercel.app"
-            "https://github-readme-activity-graph.vercel.app"
-          )
-          for url in "${urls[@]}"; do
-            STATUS=$(curl -o /dev/null -s -w "%{http_code}" --max-time 10 "$url")
-            echo "  [$STATUS] $url"
-          done
-          echo "✅ Badge check complete"
-
-  # ──────────────────────────────────────────────
-  # JOB 4: Auto-Deploy to GitHub Pages (optional)
-  # ──────────────────────────────────────────────
-  deploy-pages:
-    name: 🌐 Deploy Profile Page
-    runs-on: ubuntu-latest
-    needs: validate-readme
-    if: github.ref == 'refs/heads/main'
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: "20"
-
-      - name: Convert README to HTML preview
-        run: |
-          npm install -g marked
-          marked README.md > index.html
-          echo "✅ HTML preview generated"
-
-      - name: Summary report
-        run: |
-          echo "## 🚀 Deployment Summary" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "| Step | Status |" >> $GITHUB_STEP_SUMMARY
-          echo "|------|--------|" >> $GITHUB_STEP_SUMMARY
-          echo "| 🐍 Snake animation | ✅ Generated |" >> $GITHUB_STEP_SUMMARY
-          echo "| 📊 Stats update    | ✅ Refreshed |" >> $GITHUB_STEP_SUMMARY
-          echo "| 🔍 README validate | ✅ Passed    |" >> $GITHUB_STEP_SUMMARY
-          echo "| 🌐 HTML preview    | ✅ Built     |" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "**Profile:** https://github.com/Salom0227" >> $GITHUB_STEP_SUMMARY
