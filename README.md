@@ -1,31 +1,8 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:050a0f,50:00F7FF,100:050a0f&height=220&section=header&text=SHOXZOD%20QALANDAROV&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=System%20Administrator%20%7C%20DevOps%20Engineer&descAlignY=58&descSize=16&descColor=00F7FF"/>
+<img src="https://raw.githubusercontent.com/salom0227/salom0227/main/header.svg" width="800" alt="Shoxzod Qalandarov — DevOps Engineer"/>
 
 <img src="https://komarev.com/ghpvc/?username=salom0227&color=00F7FF&style=for-the-badge&label=PROFILE+VIEWS"/>
-
-<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=700&size=20&pause=1200&color=00F7FF&center=true&vCenter=true&width=750&height=45&lines=CI%2FCD+Automation+Expert;Zero-Downtime+Deployment+Specialist;Docker+%26+Kubernetes+Engineer;Network+%26+Security+Professional;Grafana+%7C+Prometheus+%7C+Zabbix+Master;Linux+Infrastructure+Architect;SIEM+%7C+DLP+%7C+Firewall+Specialist;Telegram+Bot+%26+Python+Developer" alt="Typing SVG"/>
-
-<br/>
-
-![](https://img.shields.io/badge/STATUS-AVAILABLE_FOR_HIRE-00ff88?style=for-the-badge&logo=checkmarx&logoColor=white)
-![](https://img.shields.io/badge/LOCATION-TASHKENT%2C_UZ-00F7FF?style=for-the-badge&logo=googlemaps&logoColor=white)
-![](https://img.shields.io/badge/EXPERIENCE-2%2B_YEARS-bf5af2?style=for-the-badge)
-![](https://img.shields.io/badge/UPTIME-99.9%25-00ff88?style=for-the-badge)
-
-</div>
-
----
-
-<div align="center">
-
-### Contribution Snake
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/salom0227/salom0227/output/github-contribution-grid-snake-dark.svg"/>
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/salom0227/salom0227/output/github-contribution-grid-snake.svg"/>
-  <img alt="Snake animation" src="https://raw.githubusercontent.com/salom0227/salom0227/output/github-contribution-grid-snake-dark.svg"/>
-</picture>
 
 </div>
 
@@ -37,14 +14,19 @@
 ┌─[shoxzod@devops-station]─[~]
 └──╼ $ cat whoami.json
 {
-  "name"      : "Shoxzod Qalandarov",
-  "role"      : "System Administrator / DevOps Engineer",
-  "education" : "Information Security | NUUz Jizzakh | 2021-2025",
-  "location"  : "Tashkent, Uzbekistan",
-  "uptime"    : "99.9%",
-  "downtime"  : "0ms",
-  "languages" : ["Uzbek (Native)", "English (B1)", "Russian (Elementary)"],
-  "focus"     : [
+  "name"     : "Shoxzod Qalandarov",
+  "role"     : "System Administrator / DevOps Engineer",
+  "location" : "Tashkent, Uzbekistan",
+  "uptime"   : "99.9%",
+  "downtime" : "0ms",
+  "languages": ["Uzbek (Native)", "English (B1)", "Russian (Elementary)"],
+  "education": {
+    "university": "National University of Uzbekistan",
+    "branch"    : "Jizzakh Branch",
+    "degree"    : "Bachelor — Information Security",
+    "period"    : "2021–2025"
+  },
+  "focus": [
     "Zero-Downtime Deployments",
     "Blue-Green & Canary Strategies",
     "Infrastructure as Code",
@@ -102,12 +84,10 @@
 ![Jenkins](https://img.shields.io/badge/Jenkins-D33833?style=for-the-badge&logo=jenkins&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![Docker Compose](https://img.shields.io/badge/Docker_Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Ansible](https://img.shields.io/badge/Ansible-EE0000?style=for-the-badge&logo=ansible&logoColor=white)
-![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
-![Vagrant](https://img.shields.io/badge/Vagrant-1868F2?style=for-the-badge&logo=vagrant&logoColor=white)
-![Consul](https://img.shields.io/badge/Consul-F24C53?style=for-the-badge&logo=consul&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![Blue-Green](https://img.shields.io/badge/Blue--Green-00ff88?style=for-the-badge&logoColor=black)
+![Canary](https://img.shields.io/badge/Canary-ffd60a?style=for-the-badge&logoColor=black)
+![Rollback](https://img.shields.io/badge/Rollback-ff6b6b?style=for-the-badge&logoColor=white)
+![A/B Deploy](https://img.shields.io/badge/A%2FB_Deploy-bf5af2?style=for-the-badge&logoColor=white)
 
 </div>
 
@@ -120,7 +100,20 @@
 ![Zabbix](https://img.shields.io/badge/Zabbix-CC0000?style=for-the-badge&logo=zabbix&logoColor=white)
 ![Netdata](https://img.shields.io/badge/Netdata-00AB44?style=for-the-badge&logo=netdata&logoColor=white)
 ![ELK Stack](https://img.shields.io/badge/ELK_Stack-005571?style=for-the-badge&logo=elasticstack&logoColor=white)
-![Wazuh](https://img.shields.io/badge/Wazuh_SIEM-3F51B5?style=for-the-badge&logo=shield&logoColor=white)
+![Wazuh SIEM](https://img.shields.io/badge/Wazuh_SIEM-3F51B5?style=for-the-badge&logoColor=white)
+![DLP](https://img.shields.io/badge/DLP_Systems-bf5af2?style=for-the-badge&logoColor=white)
+
+</div>
+
+## IaC & Orchestration
+
+<div align="center">
+
+![Ansible](https://img.shields.io/badge/Ansible-EE0000?style=for-the-badge&logo=ansible&logoColor=white)
+![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
+![Vagrant](https://img.shields.io/badge/Vagrant-1868F2?style=for-the-badge&logo=vagrant&logoColor=white)
+![Consul](https://img.shields.io/badge/Consul-F24C53?style=for-the-badge&logo=consul&logoColor=white)
 
 </div>
 
@@ -129,10 +122,13 @@
 <div align="center">
 
 ![Mikrotik](https://img.shields.io/badge/Mikrotik_RouterOS-293239?style=for-the-badge&logo=mikrotik&logoColor=white)
-![Firewall](https://img.shields.io/badge/iptables-FF0000?style=for-the-badge&logo=linux&logoColor=white)
-![Kerio](https://img.shields.io/badge/Kerio_Control-0078D4?style=for-the-badge&logo=cisco&logoColor=white)
-![VPN](https://img.shields.io/badge/VPN%2FVLAN-00F7FF?style=for-the-badge&logo=wireguard&logoColor=black)
-![DLP](https://img.shields.io/badge/DLP_Systems-bf5af2?style=for-the-badge&logo=shield&logoColor=white)
+![iptables](https://img.shields.io/badge/iptables-FF0000?style=for-the-badge&logo=linux&logoColor=white)
+![Kerio Control](https://img.shields.io/badge/Kerio_Control-0078D4?style=for-the-badge&logo=cisco&logoColor=white)
+![VPN](https://img.shields.io/badge/VPN-00F7FF?style=for-the-badge&logo=wireguard&logoColor=black)
+![VLAN](https://img.shields.io/badge/VLAN-00F7FF?style=for-the-badge&logoColor=black)
+![DNS](https://img.shields.io/badge/DNS-888?style=for-the-badge&logoColor=white)
+![DHCP](https://img.shields.io/badge/DHCP-888?style=for-the-badge&logoColor=white)
+![TCP/IP](https://img.shields.io/badge/TCP%2FIP-555?style=for-the-badge&logoColor=white)
 
 </div>
 
@@ -146,6 +142,7 @@
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 
 </div>
 
@@ -164,19 +161,22 @@
 
 ---
 
-## DevOps Pipeline
-
-<div align="center">
-<img src="https://raw.githubusercontent.com/salom0227/salom0227/main/pipeline.svg" alt="DevOps Pipeline"/>
-</div>
-
-
----
-
 ## GitHub Trophies
 
 <div align="center">
 <img src="https://github-profile-trophy.vercel.app/?username=salom0227&theme=radical&no-frame=true&no-bg=true&row=1&column=6&margin-w=4"/>
+</div>
+
+---
+
+## Contribution Snake
+
+<div align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/salom0227/salom0227/output/github-contribution-grid-snake-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/salom0227/salom0227/output/github-contribution-grid-snake.svg"/>
+  <img alt="Snake animation" src="https://raw.githubusercontent.com/salom0227/salom0227/output/github-contribution-grid-snake-dark.svg"/>
+</picture>
 </div>
 
 ---
@@ -217,6 +217,6 @@ Python / Aiogram       ████████████████░░░
 >
 > **— Shoxzod Qalandarov**
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:050a0f,50:00F7FF,100:050a0f&height=120&section=footer"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:050a0f,50:00F7FF,100:050a0f&height=100&section=footer"/>
 
 </div>
